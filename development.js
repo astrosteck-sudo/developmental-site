@@ -57,11 +57,11 @@ const third_slide = document.getElementById("third")
 second_slide.addEventListener("click", () => {
     [first_pic,second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 0)
     setTimeout(() => {
-        first_pic.src = "slide_pictures/pexels-gabriela-palai-129458-395196(1).jpg";
+        first_pic.src = "pexels-gabriela-palai-129458-395196(1).jpg";
         image_description.textContent = "NewLife"
-        second_pic.src = "slide_pictures/pexels-harold-granados-115813190-9984286.jpg";
-        third_pic.src = "slide_pictures/pexels-simonmigaj-746386.jpg";
-        fourth_pic.src = "slide_pictures/pexels-jjagtenberg-103123.jpg";
+        second_pic.src = "pexels-harold-granados-115813190-9984286.jpg";
+        third_pic.src = "pexels-simonmigaj-746386.jpg";
+        fourth_pic.src = "pexels-jjagtenberg-103123.jpg";
         [first_pic, second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 1);
     }, 400);
 });
@@ -69,10 +69,10 @@ second_slide.addEventListener("click", () => {
 first_slide.addEventListener("click", () => {
     [first_pic,second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 0)
     setTimeout(() => {
-        first_pic.src = "slide_pictures/pexels-quang-nguyen-vinh-222549-2153722.jpg";
-        second_pic.src = "slide_pictures/pexels-quang-nguyen-vinh-222549-6877880.jpg";
-        third_pic.src = "slide_pictures/pexels-mikhail-nilov-9207076.jpg";
-        fourth_pic.src = "slide_pictures/pexels-diana-reyes-227887231-32514943.jpg";
+        first_pic.src = "pexels-quang-nguyen-vinh-222549-2153722.jpg";
+        second_pic.src = "pexels-quang-nguyen-vinh-222549-6877880.jpg";
+        third_pic.src = "pexels-mikhail-nilov-9207076.jpg";
+        fourth_pic.src = "pexels-diana-reyes-227887231-32514943.jpg";
         [first_pic, second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 1);
     }, 400);
 });
@@ -80,10 +80,10 @@ first_slide.addEventListener("click", () => {
 third_slide.addEventListener("click", () => {
     [first_pic,second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 0)
     setTimeout(() => {
-        first_pic.src = "slide_pictures/pexels-zulfugarkarimov-34313512.jpg";
-        second_pic.src = "slide_pictures/pexels-ozgomz-840719.jpg";
-        third_pic.src = "slide_pictures/pexels-nandhukumar-450441(1).jpg";
-        fourth_pic.src = "slide_pictures/pexels-svliiim-34305420.jpg";
+        first_pic.src = "pexels-zulfugarkarimov-34313512.jpg";
+        second_pic.src = "pexels-ozgomz-840719.jpg";
+        third_pic.src = "pexels-nandhukumar-450441(1).jpg";
+        fourth_pic.src = "pexels-svliiim-34305420.jpg";
         [first_pic, second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 1);
     }, 400);
 });
@@ -118,4 +118,5 @@ window.addEventListener('resize', setVh);
 // mybox.addEventListener("mouseout", event => {
 //     event.target.style.backgroundColor = "lightgreen"; //the target is what we clicked on
 //     event.target.textContent = "Click Me 😊"
+
 // })
