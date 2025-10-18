@@ -11,7 +11,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("new_foreign_pic/pexels-taryn-elliott-4840134.jpg"); /* your image path */
+  background-image: url("pexels-taryn-elliott-4840134.jpg"); /* your image path */
   background-size: cover;      /* makes it stretch nicely */
   background-repeat: no-repeat;
   background-attachment: fixed; /* keeps it still when you scroll */
@@ -501,4 +501,5 @@ h1, h2, h3 { margin: 0; } /* remove default margins for headings */
   3) For the backdrop blur, some older Android browsers don't support backdrop-filter; the dark translucent fallback keeps text readable.
   4) After typing this mobile CSS, test using your phone or Chrome DevTools device toolbar to confirm spacing and font sizes.
 */
+
 }
