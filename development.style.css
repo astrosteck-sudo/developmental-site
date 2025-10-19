@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* body{
     background-color: white;
@@ -11,7 +11,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("pexels-taryn-elliott-4840134.jpg"); /* your image path */
+  background-color: black;
+  background-image: url("new_foreign_pic/pexels-taryn-elliott-4840134.jpg"); /* your image path */
   background-size: cover;      /* makes it stretch nicely */
   background-repeat: no-repeat;
   background-attachment: fixed; /* keeps it still when you scroll */
@@ -54,7 +55,7 @@ img.displaySlide{
 }
 .slider-content h1{
   font-family: BBH Sans Bartle,  Arial, Helvetica, sans-serif;
-  font-size: 3rem;
+  font-size: 9.6rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.5);
   color: rgb(225, 244, 7);
@@ -65,6 +66,7 @@ img.displaySlide{
   color: #ffff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.8);
   animation: fade-In 3s ease-in;
+  font-size: 2.7rem;
 }
 
 
@@ -77,29 +79,36 @@ img.displaySlide{
   align-items: center;
   justify-content: center;
   gap: 50px;
-  padding: 10px 10%;
+  /* padding: 10px 10%; */
   /* border: solid rgb(221, 15, 15); */
   /* background-color: lightyellow; */
   width: 100vw;
+  /* border: solid blue; */
+  height: 500px;
 }
 .welcome-image img {
-  width: 200px;
+  width: 380px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   z-index: 10; /* ensures the person image appears above background layers */
   /* z-index: 10 makes sure the person photo is not hidden behind any other element */
 }
 .welcome-text{
-  max-width: 500px;
   text-align: right;
+  /* border: solid green; */
+  width: 60vw;
+  padding: 2px 20px;
+  height: 400px;
+  padding: 110px 30px;
 }
 .welcome-text h2 {
-  font-size: 2.5rem;
+  font-size: 4.9rem;
   color: #ffffff;
   font-family: Playwrite AU TAS;
+  padding-bottom: 20px;
 }
 .welcome-text p {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   line-height: 1.6;
   color: #fef9f9;
 }
@@ -111,68 +120,69 @@ img.displaySlide{
   /* background-color: lightyellow; */
   /* color: #333; */
   width: 100vw;
+  /* border: solid violet; */
+  height: 400px;
+}
+.about p{
+  font-size: 2.0rem;
+  color: #eefa04;
 }
 .about h2{
   font-family: anton;
 }
 .about-details{
-  justify-content: left;
+  justify-content: center;
   text-align: left;
   /* border: solid greenyellow; */
   padding-right: 400px;
+  /* border: solid floralwhite; */
+  height: 300px;
+  align-items: center;
+  padding: 30px 20px;
+  overflow: scroll;
+}
+.about-details h3{
+  font-size: 1.9rem;
 }
 .about-details p{
   color: rgb(28, 226, 68);
   text-align: left;
   font-family: Michroma;
-  font-size: .9rem;
+  font-size: 2.6rem;
 }
 
 
 /*this is to control the gallery*/
 .gallery{
-  /* background-color: lightyellow; */
-  /* border: solid greenyellow; */
   width: 100vw;
-}
-.gallery h2{
+  height: 500px;
+  /* border: solid blue; */
   text-align: center;
-  /* background-color: lightyellow; */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.gallery-container{
-  /* padding: 20px ; */
-  text-align: left;
-  /* background-color: lightyellow; */
-  color: #333;
-  width: 100vw;
+
+.gallery_show img{
+  width: 360px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
 }
 .gallery_show{
   display: inline-block;
-  /* border: 1px solid hsl(0, 0%, 60%); */
-  margin: 60px;
-  width: 100px;
+  /* border: solid red; */
+  gap: 200px;
+  margin: 45px;
+  
 }
-
-.gallery_show .description{
-  padding: 10px;
-  text-align: center;
-}
-
 .gallery_show img:hover{
   border: hsl(0, 0%, 10%);
   transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(252, 251, 251, 0.4);
 }
 
-.gallery_show img{
-  width: 200%;
-  height: auto;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  border-radius: 20px;
-  justify-content: left;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-} 
+
+
+
+
 .radio_buttons{
   display: flex;
   justify-content: center;
@@ -191,7 +201,7 @@ img.displaySlide{
 .contacts{
   background-color: rgb(41, 127, 156);
   /* padding: 80px 1%; */
-  height: 200px;
+  height: 300px;
   text-align: center;
   color: #333;
   /* border: solid pink; */
@@ -202,6 +212,13 @@ img.displaySlide{
   text-align: left;
   justify-content: left;
   padding: 10px;
+  font-size: 2.0rem;
+}
+.contacts h2{
+  text-align: center;
+  justify-content: left;
+  padding: 10px;
+  font-size: 2.0rem;
 }
 .contacts a{
   color: #2fe70a;
@@ -281,226 +298,57 @@ footer {
 
 
 
-@media (max-width: 400px){
-  /* ====== MOBILE-FIRST BASE (target: small phones) ====== */
+@media (max-width: 480px){
+  .slider{
+    border: solid green;
+  }
+  .slider img{
+    border: solid red;
+    height: 100vh;
+  }
+  .slider-content{
+    border: solid pink;
+    text-align: left;
+    justify-content: left;
+  }
+  .slider-content h1{
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+  .slider-content p{
+    font-size: 25px;
+    border: solid blue;
+  }
 
-/* Body + global */
-body {
-  margin: 0; /* remove default page margin */
-  padding: 0; /* remove default padding */
-  font-family: Roboto, "Helvetica Neue", Arial, sans-serif; /* default readable font */
-  color: #ffffff; /* default text color: pure white for contrast */
-  background-image: url("new_foreign_pic/pexels-taryn-elliott-4840134.jpg"); /* page background image */
-  background-size: cover; /* make image cover entire viewport */
-  background-position: center; /* center the background image */
-  background-repeat: no-repeat; /* do not tile the image */
-  /* NOTE: avoid background-attachment: fixed on mobile (performance), we'll add for larger screens later */
+  .welcome{
+    border: solid violet;
+    overflow: scroll;
+    margin-left: 0px;
+    display: inline-block;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .welcome-image img{
+    width: 369px;
+    height: 270px;
+    text-align: left;
+    border-radius: 0px;
+  }
+  .welcome-text {
+    border: solid white;
+    padding: 5px;
+  }
+  .welcome-text h2{
+    border: solid indianred;
+    font-size: 20px;
+    text-align: center;
+    justify-content: left;
+  }
+  .welcome-text p{
+    font-size: 29.4px;
+    border: solid salmon;
+    width: 700px;
+    text-align: left;
+    padding-right: 379px;
+  }
 }
-
-/* Make images and media responsive by default */
-img, picture, video {
-  max-width: 100%; /* prevent overflow on small screens */
-  height: auto; /* keep natural aspect ratio */
-  display: block; /* remove inline gap */
-}
-
-/* ====== SLIDER (mobile) ====== */
-.slider {
-  width: 100vw; /* full width of viewport */
-  height: 56vh; /* mobile-friendly height using viewport width (scales) */
-  overflow: hidden; /* hide overflow when slides move */
-  position: relative; /* for absolutely positioned content inside */
-  border: solid red;
-}
-
-/* slides container - images inside */
-.slides img {
-  width: 100%; /* fill slider width */
-  height: 100%; /* fill slider height */
-  object-fit: cover; /* crop while preserving aspect ratio */
-  display: none; /* hidden by default; JS will show the active slide */
-}
-
-/* active slide class used by JS */
-img.displaySlide {
-  display: block; /* show active slide */
-  animation: fade 1200ms ease-in-out; /* fade animation for incoming slide */
-}
-
-/* slider text area (title + subtitle) */
-.slider-content {
-  position: absolute; /* place over the slider image */
-  left: 6%; /* small left padding on mobile */
-  right: 6%; /* small right padding on mobile */
-  top: 50%; /* vertically center */
-  transform: translateY(-50%); /* correct vertical centering */
-  z-index: 10; /* keep on top of slides */
-  text-align: left; /* left align on mobile for easier reading */
-  pointer-events: none; /* allow clicks to pass through to controls (if any) */
-}
-
-/* slider H1: mobile sizing + glowing white */
-.slider-content h1 {
-  margin: 0 0 6px 0; /* small gap under the title */
-  font-size: 6.5vw; /* responsive font using viewport width */
-  line-height: 1.05; /* tight line height for big titles */
-  color: #ffffff; /* pure white */
-  text-shadow: 0 0 8px rgba(255,255,255,0.85), 0 6px 18px rgba(0,0,0,0.45); /* glow + depth */
-  animation: slideLeft 700ms ease-out; /* run slide-in animation on load */
-  animation-fill-mode: both; /* keep final state after animation completes */
-}
-
-/* slider paragraph: subtitle */
-.slider-content p {
-  margin: 0;
-  font-size: 3.6vw; /* smaller than h1, scales with viewport */
-  color: rgba(255,255,255,0.95); /* slightly less harsh white */
-  animation: fadeIn 900ms ease-in; /* subtle fade-in */
-  animation-fill-mode: both;
-}
-
-/* ====== WELCOME SECTION (person with sign) - STACKED for mobile ====== */
-.welcome {
-  display: flex; /* enable flex layout */
-  flex-direction: column; /* stack image above text on mobile */
-  align-items: center; /* center items horizontally */
-  gap: 14px; /* vertical gap between image and text */
-  padding: 20px 6%; /* comfortable padding on small screens */
-  width: 100%;
-  box-sizing: border-box; /* include padding in width calculations */
-}
-
-/* person image smaller on mobile */
-.welcome-image img {
-  width: 64%; /* relative to parent for responsiveness */
-  max-width: 260px; /* upper limit to avoid huge images on large phone screens */
-  border-radius: 12px; /* rounded corners */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* soft drop shadow */
-}
-
-/* welcome text centered for mobile */
-.welcome-text {
-  text-align: center;
-  color: #fff; /* ensure white text */
-  max-width: 100%;
-}
-
-.welcome-text h2 {
-  margin: 0;
-  font-size: 5.6vw; /* responsive heading size */
-}
-
-.welcome-text p {
-  margin-top: 6px;
-  font-size: 3.6vw; /* readable paragraph size on small screens */
-  color: rgba(255,255,255,0.95);
-}
-
-/* ====== ABOUT / GALLERY (mobile-friendly) ====== */
-.about, .gallery {
-  padding: 22px 6%; /* narrower padding for mobile */
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.about h2, .gallery h2 {
-  font-size: 5.2vw;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-/* gallery items become a single column on mobile */
-.gallery-container {
-  display: grid;
-  grid-template-columns: 1fr; /* single column */
-  gap: 12px;
-}
-
-/* each gallery image block */
-.gallery_show img {
-  width: 100%; /* full width of column */
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
-  transition: transform 0.35s ease, box-shadow 0.35s ease; /* smooth hover/press effects */
-}
-
-/* touch / hover effect */
-.gallery_show img:active,
-.gallery_show img:focus {
-  transform: scale(0.99); /* tiny shrink on tap for feedback */
-}
-
-/* ====== CONTACTS + FOOTER (blurred glass look on mobile) ====== */
-.contacts, footer {
-  padding: 18px 6%; /* inner spacing */
-  box-sizing: border-box;
-  color: #fff; /* text white for contrast */
-  border-top: 1px solid rgba(255,255,255,0.08); /* subtle divider */
-  /* fallback background color for browsers without backdrop-filter support */
-  background: rgba(0,0,0,0.35); /* dark translucent fallback so text remains legible */
-}
-
-/* Preferred: frosted glass blur (some mobile browsers support it) */
-.contacts::before,
-footer::before {
-  content: ""; /* pseudo-element used to apply backdrop blur area if supported */
-  position: absolute;
-  inset: 0; /* fill the element */
-  backdrop-filter: blur(8px) saturate(120%); /* blur whatever is behind this element */
-  -webkit-backdrop-filter: blur(8px) saturate(120%); /* Safari prefix */
-  pointer-events: none; /* don't interfere with clicks */
-  z-index: 0; /* behind text/content */
-  border-radius: 0;
-  /* Keep pseudo-element invisible when backdrop-filter is not supported */
-  background: rgba(255,255,255,0.02);
-}
-
-/* Ensure the real content sits above the pseudo-element */
-.contacts > * , footer > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* links inside contacts/footer: bright and obvious */
-.contacts a, footer a {
-  color: #ffffff; /* pure white links for high contrast */
-  text-decoration: none; /* remove underline by default */
-  font-weight: 600; /* slightly bolder */
-  transition: color 160ms ease, text-shadow 160ms ease;
-}
-.contacts a:hover, footer a:hover {
-  color: #ffd54a; /* warm gold accent on hover */
-  text-decoration: underline; /* underline on hover for affordance */
-  text-shadow: 0 0 6px rgba(255,213,74,0.7); /* light glow on hover */
-}
-
-/* ====== SMALL UTILITY RULES ====== */
-p { margin: 0 0 10px 0; line-height: 1.45; font-size: 3.8vw; } /* mobile paragraph spacing & size */
-h1, h2, h3 { margin: 0; } /* remove default margins for headings */
-
-/* ====== ANIMATIONS (keep simple for mobile) ====== */
-@keyframes fade {
-  from { opacity: 0.35; transform: scale(1.02); } /* slight scale for depth */
-  to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes slideLeft {
-  from { transform: translateX(60%); opacity: 0; } /* start off-screen to right */
-  to { transform: translateX(0); opacity: 1; } /* finish at natural position */
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ====== NOTES for you (not CSS) ======
-  1) Keep your JS that toggles 'displaySlide' unchanged — it will still work.
-  2) On mobile, avoid 'background-attachment: fixed' (poor performance). We'll enable it for larger screens later.
-  3) For the backdrop blur, some older Android browsers don't support backdrop-filter; the dark translucent fallback keeps text readable.
-  4) After typing this mobile CSS, test using your phone or Chrome DevTools device toolbar to confirm spacing and font sizes.
-*/
-
-}
-
