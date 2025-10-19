@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  background-image: url("new_foreign_pic/pexels-taryn-elliott-4840134.jpg"); /* your image path */
+  background-image: url("pexels-taryn-elliott-4840134.jpg"); /* your image path */
   background-size: cover;      /* makes it stretch nicely */
   background-repeat: no-repeat;
   background-attachment: fixed; /* keeps it still when you scroll */
@@ -179,10 +179,6 @@ img.displaySlide{
   box-shadow: 0 10px 20px rgba(252, 251, 251, 0.4);
 }
 
-
-
-
-
 .radio_buttons{
   display: flex;
   justify-content: center;
@@ -299,6 +295,7 @@ footer {
 
 
 @media (max-width: 480px){
+  /*THIS CONTROLS THE SLIDER SECTION*/
   .slider{
     border: solid green;
   }
@@ -320,6 +317,7 @@ footer {
     border: solid blue;
   }
 
+  /*THIS CONTROLS THE WELCOME SECTION*/
   .welcome{
     border: solid violet;
     overflow: scroll;
@@ -338,6 +336,10 @@ footer {
     border: solid white;
     padding: 5px;
   }
+  .welcome h2{
+    text-align: center;
+    justify-content: center;
+  }
   .welcome-text h2{
     border: solid indianred;
     font-size: 20px;
@@ -351,4 +353,82 @@ footer {
     text-align: left;
     padding-right: 379px;
   }
+
+  /*THIS CONTROLS THE ABOUT SECTION*/
+   .about{
+    border: solid rgb(242, 69, 21);
+    overflow: hidden;
+    width: 100vw;
+    height: 700px;
+  } 
+  .about > p{
+    font-size: 1.4rem;
+    border: solid rgb(200, 37, 37);
+  }
+  .about-details{
+    font-size: 2rem;
+    overflow: hidden;
+    height: 900vh;
+    border: solid fuchsia;
+    text-align: right;
+  }
+  .about-details h3{
+    font-size: 2.0rem;
+  }
+  .about-details p{
+    font-size: 2.0rem;
+  }
+
+/*THIS CONTROLS THE GALLERY SECTION*/
+  .gallery{
+    width: 100vw;
+    height: 370px;
+    border: solid #0000ff;
+    text-align: left;
+    overflow: scroll;
+    padding-right: 200px;
+    /* overflow-x: hidden; */
+  }
+  .gallery h2{
+    text-align: center;
+    justify-content: right;
+    border: solid rgb(46, 137, 167);
+  }
+  /* .gallery-container{
+    display: flex;
+  } */
+
+  .gallery_show img{
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(18, 18, 14, 0.2);
+    transition: transform 0.3s;
+    border: solid fuchsia;
+  }
+  .gallery_show{
+    /* display: inline-block; */
+    border: solid red;
+    gap: 200px;
+    margin: 45px;
+    justify-content: left;
+  }
+  .radio_buttons{
+    height: 50px;
+    border: solid deeppink;
+    gap: 90px;
+  }
+  input[type="radio"] {
+    transform: scale(2.4);
+  }
+  
+  /*THIS CONTROLS THE CONTACTS SECTION*/
+  .contacts{
+    border: solid rgb(213, 193, 193);
+  }
+  .contacts p{
+    overflow: hidden;
+    font-size: 1.5rem
+  }
+  
 }
+
