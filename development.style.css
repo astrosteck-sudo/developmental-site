@@ -399,6 +399,10 @@ footer {
     margin: 1px;
 
   }
+  .swipe-text{
+    text-align: center;
+    font-size: 2rem;
+  }
 
   .radio_buttons{
     height: 50px;
