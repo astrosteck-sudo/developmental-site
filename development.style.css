@@ -300,11 +300,11 @@ footer {
     border: solid green;
   }
   .slider img{
-    border: solid red;
+    /* border: solid red; */
     height: 100vh;
   }
   .slider-content{
-    border: solid pink;
+    /* border: solid pink; */
     text-align: left;
     justify-content: left;
   }
@@ -314,12 +314,12 @@ footer {
   }
   .slider-content p{
     font-size: 25px;
-    border: solid blue;
+    /* border: solid blue; */
   }
 
   /*THIS CONTROLS THE WELCOME SECTION*/
   .welcome{
-    border: solid violet;
+    /* border: solid rgb(171, 95, 171); */
     overflow: scroll;
     margin-left: 0px;
     display: inline-block;
@@ -333,7 +333,7 @@ footer {
     border-radius: 0px;
   }
   .welcome-text {
-    border: solid white;
+    /* border: solid white; */
     padding: 5px;
   }
   .welcome h2{
@@ -341,14 +341,16 @@ footer {
     justify-content: center;
   }
   .welcome-text h2{
-    border: solid indianred;
+    /* border: solid indianred; */
     font-size: 20px;
     text-align: center;
     justify-content: left;
+    width: 100vw;
+    margin: 0px;
   }
   .welcome-text p{
     font-size: 29.4px;
-    border: solid salmon;
+    /* border: solid salmon; */
     width: 700px;
     text-align: left;
     padding-right: 379px;
@@ -356,20 +358,20 @@ footer {
 
   /*THIS CONTROLS THE ABOUT SECTION*/
    .about{
-    border: solid rgb(242, 69, 21);
+    /* border: solid rgb(242, 69, 21); */
     overflow: hidden;
     width: 100vw;
     height: 1200px;
   } 
   .about > p{
     font-size: 1.4rem;
-    border: solid rgb(200, 37, 37);
+    /* border: solid rgb(200, 37, 37); */
   }
   .about-details{
     font-size: 2rem;
     overflow: hidden;
     height: 900vh;
-    border: solid fuchsia;
+    /* border: solid fuchsia; */
     text-align: right;
   }
   .about-details h3{
@@ -381,24 +383,31 @@ footer {
 
 /*THIS CONTROLS THE GALLERY SECTION*/
   .gallery{
-    border: solid forestgreen;
+    /* border: solid forestgreen; */
     overflow: scroll;
     height: 300px;
     overflow-y: hidden;
   }
   .gallery-container{
-    border: solid deepskyblue;
+    /* border: solid deepskyblue; */
     overflow: scroll;
     display: flex;
     width: 100vw;
     /* justify-content: space-evenly; */
   }
   .gallery_show{
-    border: solid slateblue;
+    /* border: solid slateblue; */
     text-align: left;
-    margin: 1px;
-
+    margin: 8px;
   }
+  .gallery img{
+    box-shadow: 0 10px 20px #0b0f0a;
+  }
+  .gallery_show img:hover{
+  border: #0b0f0a;
+  transform: scale(0);
+  box-shadow: 0 10px 20px #0b0f0a;
+}
   .swipe-text{
     text-align: center;
     font-size: 2rem;
@@ -406,7 +415,7 @@ footer {
 
   .radio_buttons{
     height: 50px;
-    border: solid deeppink;
+    /* border: solid deeppink; */
     gap: 90px;
   }
   input[type="radio"] {
@@ -419,7 +428,7 @@ footer {
   }
   .contacts p{
     overflow: hidden;
-    font-size: 1.5rem
+    font-size: 1.3rem;
   }
   
 }
