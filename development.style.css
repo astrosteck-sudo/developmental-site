@@ -345,7 +345,6 @@ footer {
     font-size: 20px;
     text-align: center;
     justify-content: left;
-    width: 30px;
   }
   .welcome-text p{
     font-size: 29.4px;
@@ -360,7 +359,7 @@ footer {
     border: solid rgb(242, 69, 21);
     overflow: hidden;
     width: 100vw;
-    height: 700px;
+    height: 1200px;
   } 
   .about > p{
     font-size: 1.4rem;
@@ -384,8 +383,8 @@ footer {
   .gallery{
     border: solid forestgreen;
     overflow: scroll;
-    height: 350px;
-    
+    height: 300px;
+    overflow-y: hidden;
   }
   .gallery-container{
     border: solid deepskyblue;
@@ -397,8 +396,8 @@ footer {
   .gallery_show{
     border: solid slateblue;
     text-align: left;
-    margin: 2px;
-    gap: 100px;
+    margin: 1px;
+
   }
 
   .radio_buttons{
