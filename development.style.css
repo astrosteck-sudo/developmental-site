@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  background-image: url("pexels-taryn-elliott-4840134.jpg"); /* your image path */
+  background-image: url("new_foreign_pic/pexels-taryn-elliott-4840134.jpg"); /* your image path */
   background-size: cover;      /* makes it stretch nicely */
   background-repeat: no-repeat;
   background-attachment: fixed; /* keeps it still when you scroll */
@@ -381,37 +381,25 @@ footer {
 
 /*THIS CONTROLS THE GALLERY SECTION*/
   .gallery{
-    width: 100vw;
-    height: 370px;
-    border: solid #0000ff;
-    text-align: left;
+    border: solid forestgreen;
     overflow: scroll;
-    padding-right: 200px;
-    /* overflow-x: hidden; */
+    height: 350px;
+    
   }
-  .gallery h2{
-    text-align: center;
-    justify-content: right;
-    border: solid rgb(46, 137, 167);
-  }
-  /* .gallery-container{
+  .gallery-container{
+    border: solid deepskyblue;
+    overflow: scroll;
     display: flex;
-  } */
-
-  .gallery_show img{
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(18, 18, 14, 0.2);
-    transition: transform 0.3s;
-    border: solid fuchsia;
+    width: 100vw;
+    /* justify-content: space-evenly; */
   }
   .gallery_show{
-    /* display: inline-block; */
-    border: solid red;
-    gap: 200px;
-    margin: 45px;
-    justify-content: left;
+    border: solid slateblue;
+    text-align: left;
+    margin: 2px;
+    gap: 100px;
   }
+
   .radio_buttons{
     height: 50px;
     border: solid deeppink;
