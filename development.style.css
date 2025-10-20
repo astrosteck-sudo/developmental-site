@@ -345,6 +345,7 @@ footer {
     font-size: 20px;
     text-align: center;
     justify-content: left;
+    width: 30px;
   }
   .welcome-text p{
     font-size: 29.4px;
