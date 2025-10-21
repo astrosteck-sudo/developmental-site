@@ -88,35 +88,46 @@ third_slide.addEventListener("click", () => {
     }, 400);
 });
 
-function setVh() {
-    let vh =window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+const sets = [
+  [
+    "pexels-quang-nguyen-vinh-222549-2153722.jpg",
+    "pexels-quang-nguyen-vinh-222549-6877880.jpg",
+    "pexels-mikhail-nilov-9207076.jpg",
+    "pexels-diana-reyes-227887231-32514943.jpg"
+  ],
+  [
+    "pexels-gabriela-palai-129458-395196(1).jpg",
+    "pexels-harold-granados-115813190-9984286.jpg",
+    "pexels-simonmigaj-746386.jpg",
+    "pexels-jjagtenberg-103123.jpg"
+  ],
+  [
+    "pexels-zulfugarkarimov-34313512.jpg",
+    "pexels-ozgomz-840719.jpg",
+    "pexels-nandhukumar-450441(1).jpg",
+    "pexels-svliiim-34305420.jpg"
+  ]
+];
+// ============ MOBILE LOGIC ============ //
+if (window.innerWidth <= 768) {
+  const galleryContainer = document.querySelector(".gallery-container") || document.querySelector(".gallery"); 
+  if (galleryContainer) {
+    galleryContainer.innerHTML = ""; // clear the 4 default images
+
+    // Combine all 3 sets into one array of 12 images
+    const allImages = sets.flat();
+
+    // Add all 12 images to the gallery
+    allImages.forEach(src => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.style.width = "100%";
+      img.style.borderRadius = "10px";
+      img.style.marginBottom = "10px";
+      img.style.transition = "transform 0.3s ease";
+      img.addEventListener("touchstart", () => img.style.transform = "scale(1.02)");
+      img.addEventListener("touchend", () => img.style.transform = "scale(1)");
+      galleryContainer.appendChild(img);
+    });
+  }
 }
-setVh();
-window.addEventListener('resize', setVh);
-/*<body>
-    
-    <div id="mybox">
-        Click me😊 
-    </div>
-
-    <button id="mybutton">Click me</button>
-
-    <script src="index.js"></script>
-</body>*/
-// const mybox = document.getElementById("mybox")
-// const mybutton = document.getElementById("mybutton")
-
-// mybox.addEventListener("click", event => {
-//     event.target.style.backgroundColor = "tomato"; //the target is what we clicked on
-//     event.target.textContent = "OUCH🤕"
-// });
-// mybox.addEventListener("mouseover", event => {
-//     event.target.style.backgroundColor = "yellow"; //the target is what we clicked on
-//     event.target.textContent = "Don't do it 😯"
-// })
-// mybox.addEventListener("mouseout", event => {
-//     event.target.style.backgroundColor = "lightgreen"; //the target is what we clicked on
-//     event.target.textContent = "Click Me 😊"
-
-// })
