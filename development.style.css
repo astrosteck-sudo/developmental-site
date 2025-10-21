@@ -84,7 +84,7 @@ img.displaySlide{
   /* background-color: lightyellow; */
   width: 100vw;
   /* border: solid blue; */
-  height: 500px;
+  height: 590px;
 }
 .welcome-image img {
   width: 380px;
@@ -283,24 +283,27 @@ footer {
 /*THIS CONTROLS THE MAP SECTION*/
 .map-section{
   display: flex;
+  border: solid darkorchid;
 }
 #map-title{
   font-size: 2rem;
   text-align: center;
-  /* border: solid forestgreen; */
+  border: solid forestgreen;
 }
 .map-section p{
-  font-size: 4rem;
-  /* border: solid blue; */
-  width: 900px;
+  font-size: 3rem;
+  border: solid rgb(227, 251, 11);
+  width:80vw;
   margin-left: 20px;
+  overflow: scroll;
 }
 .map{
-  /* border: solid red; */
+  border: solid red;
   width: 600px;
   height: 400px;
   overflow: scroll;
   margin-left: auto;
+  margin-right: 10px;
 }
 
 
@@ -328,10 +331,13 @@ footer {
   /*THIS CONTROLS THE SLIDER SECTION*/
   .slider{
     border: solid green;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
   }
   .slider img{
     /* border: solid red; */
     height: 100vh;
+    
   }
   .slider-content{
     /* border: solid pink; */
@@ -414,43 +420,37 @@ footer {
 
 /*THIS CONTROLS THE GALLERY SECTION*/
   .gallery{
-    /* border: solid forestgreen; */
-    overflow: scroll;
-    height: 300px;
-    overflow-y: hidden;
+    border: solid red;
+    height: 330px;
   }
-  .gallery-container{
-    /* border: solid deepskyblue; */
-    overflow: scroll;
+  .gallery-container {
     display: flex;
-    width: 100vw;
-    /* justify-content: space-evenly; */
-  }
-  .gallery_show{
-    /* border: solid slateblue; */
-    text-align: left;
-    margin: 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 10px;
+    border: solid blue;
+    
   }
   .gallery img{
-    box-shadow: 0 10px 20px #0b0f0a;
+    border: solid rgb(243, 243, 4);
+    flex-shrink: 0;
+    width: 85%;
+    height: auto;
+    scroll-snap-align: center;
   }
-  .gallery_show img:hover{
-  border: #0b0f0a;
-  transform: scale(0);
-  box-shadow: 0 10px 20px #0b0f0a;
-}
-  .swipe-text{
-    text-align: center;
-    font-size: 2rem;
+  .description{
+    font-size: 4rem;
   }
 
-  .radio_buttons{
+  /* .radio_buttons{
     height: 50px;
-    /* border: solid deeppink; */
+    border: solid deeppink;
     gap: 90px;
-  }
+  } */
   input[type="radio"] {
     transform: scale(2.4);
+    display: none;
   }
   
   /*THIS CONTROLS THE CONTACTS SECTION*/
@@ -464,21 +464,26 @@ footer {
   /*THIS CONTROLS THE MAP SECTION*/
   .map-section{
   display: inline-block;
-}
+  width: 100vw;
+  }
   #map-title{
     font-size: 1rem;
-    /* border: solid forestgreen; */
+    border: solid rgb(213, 216, 231);
+    width: 100vw;
   }
   .map-section p{
-    font-size: 1rem;
-    /* border: solid blue; */
-    width: 100VW;
+    font-size: 1.2rem;
+    border: solid rgb(23, 239, 102);
+    width: 370px;
     margin-left: 0px;
     text-align: center;
+    text-align: left;
+    height: 250px;
+    overflow: scroll;
   }
   .map{
     /* border: solid red; */
-    width: 100vw;
+    width: 370px;
     height: 90vh;
     overflow: scroll;
     margin-left: auto;
