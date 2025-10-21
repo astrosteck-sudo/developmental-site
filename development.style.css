@@ -84,7 +84,7 @@ img.displaySlide{
   /* background-color: lightyellow; */
   width: 100vw;
   /* border: solid blue; */
-  height: 590px;
+  height: 500px;
 }
 .welcome-image img {
   width: 380px;
@@ -98,8 +98,9 @@ img.displaySlide{
   /* border: solid green; */
   width: 60vw;
   padding: 2px 20px;
-  height: 400px;
+  height: 200px;
   padding: 110px 30px;
+  font-family: Averia Gruesa Libre;
 }
 .welcome-text h2 {
   font-size: 4.9rem;
@@ -206,7 +207,7 @@ img.displaySlide{
 .contacts{
   background-color: rgb(41, 127, 156);
   /* padding: 80px 1%; */
-  height: 300px;
+  height: 320px;
   text-align: center;
   color: #333;
   /* border: solid pink; */
@@ -296,6 +297,8 @@ footer {
   width:80vw;
   margin-left: 20px;
   overflow: scroll;
+  font-family: Arvo;
+  color: rgb(28, 226, 68);
 }
 .map{
   /* border: solid red; */
@@ -395,7 +398,7 @@ footer {
 
   /*THIS CONTROLS THE ABOUT SECTION*/
    .about{
-    /* border: solid rgb(242, 69, 21); */
+    border: solid rgb(242, 69, 21);
     overflow: hidden;
     width: 100vw;
     height: 630px;
@@ -475,11 +478,13 @@ footer {
     font-size: 1.2rem;
     /* border: solid rgb(23, 239, 102); */
     width: 370px;
-    margin-left: 0px;
-    text-align: center;
+    margin-left: 10px;
     text-align: left;
-    height: 250px;
+    height: 300px;
     overflow: scroll;
+    font-family: Arvo;
+    
+    font-weight: bold;
   }
   .map{
     /* border: solid red; */
