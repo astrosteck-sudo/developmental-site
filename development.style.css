@@ -359,7 +359,7 @@ footer {
 
   /*THIS CONTROLS THE WELCOME SECTION*/
   .welcome{
-    border: solid rgb(171, 95, 171);
+    /* border: solid rgb(171, 95, 171); */
     overflow: scroll;
     margin-left: 0px;
     display: inline-block;
@@ -368,10 +368,10 @@ footer {
     height: 530px;
   }
   .welcome-image img{
-    width: 390px;
+    width: 373px;
     height: 270px;
     text-align: left;
-    border-radius: 0px;
+    border-radius: 10px;
     overflow: hidden;
   }
   .welcome-text {
@@ -400,7 +400,7 @@ footer {
 
   /*THIS CONTROLS THE ABOUT SECTION*/
    .about{
-    border: solid rgb(242, 69, 21);
+    /* border: solid rgb(242, 69, 21); */
     overflow: hidden;
     width: 100vw;
     height: 630px;
@@ -425,7 +425,7 @@ footer {
 
 /*THIS CONTROLS THE GALLERY SECTION*/
   .gallery{
-    border: solid red;
+    /* border: solid red; */
     height: 300px;
   }
   .gallery-container {
@@ -434,7 +434,7 @@ footer {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     gap: 10px;
-    border: solid blue;
+    /* border: solid blue; */
   }
   .gallery img{
     /* border: solid rgb(243, 243, 4); */
@@ -477,16 +477,16 @@ footer {
   }
   .map-section p{
     font-size: 1.2rem;
-    border: solid rgb(23, 239, 102);
+    /* border: solid rgb(23, 239, 102); */
     width: 370px;
-    margin-left: 0px;
+    margin-left: 2px;
     text-align: left;
     height: 300px;
     overflow: scroll;
     font-family: Arvo;
     color: gold;
-    
     font-weight: bold;
+    display: flex;
   }
   .map{
     /* border: solid red; */
