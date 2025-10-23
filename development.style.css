@@ -480,22 +480,24 @@ footer {
     width: 100vw;
   }
   .map-section p{
-    font-size: 1.2rem;
-    /* border: solid rgb(23, 239, 102); */
-    width: 370px;
-    margin-left: 5px;
-    text-align: center;
-    height: 300px;
+    font-size: 1.4rem;
+    border: solid rgb(23, 239, 102);
+    width: 100vw;
+    margin-left: 0px;
+    text-align: left;
+    height: 330px;
     font-family: Arvo;
     color: gold;
     font-weight: bold;
+    padding: 10px;
+    
   }
   .map{
     /* border: solid red; */
-    width: 370px;
-    height: 94vh;
+    width: 100vw;
+    height: 91vh;
     overflow: scroll;
-    margin-left: auto;
+    /* margin-left: auto; */
   }
   
 }
