@@ -43,17 +43,12 @@ img {
 /* body{
     background-color: white;
     /* overflow: hidden; */
-    /* background-image: url(nepexels-umkreisel-app-956999.jpg);
+    /* background-image: url(new_foreign_pic/pexels-umkreisel-app-956999.jpg);
 } */ 
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(6, 6, 5);
-  background-image: url("pexels-taryn-elliott-4840134.jpg"); /* your image path */
-  background-size: cover;      /* makes it stretch nicely */
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* keeps it still when you scroll */
-  background-position: center; /* keeps it centered */
+  background-color: #f7f7f7;
   color: white; /* optional, to make text readable */
   overflow-x: hidden;
 }
@@ -138,7 +133,7 @@ img.displaySlide{
 }
 .welcome-text h2 {
   font-size: 4rem;
-  color: #72d60f;
+  color: gold;
   font-family: Playwrite AU TAS;
   padding-bottom: 20px;
   text-shadow: #2fe70a 1px 1px;
@@ -146,7 +141,7 @@ img.displaySlide{
 .welcome-text p {
   font-size: 2.5rem;
   line-height: 1.6;
-  color: gold;
+  color: #666;
   text-align: right;
   text-shadow: #2fe70a 1px 1px;
 }
@@ -163,17 +158,18 @@ img.displaySlide{
 }
 .about p{
   font-size: 2.0rem;
-  color: #45ea09;
+  color: #666;
   text-shadow: #2fe70a 1px 1px;
 }
-.about h2{
+.about > p{
   font-family: anton;
+  color: gold;
 }
 .about-details{
   justify-content: center;
   text-align: left;
   padding-right: 400px;
-  border: solid floralwhite;
+  /* border: solid floralwhite; */
   height: 600px;
   align-items: center;
   padding: 30px 20px;
@@ -181,9 +177,10 @@ img.displaySlide{
 }
 .about-details h3{
   font-size: 1.9rem;
+  color: gold;
 }
 .about-details p{
-  color: gold;
+  color: #666;
   text-align: left;
   font-family: Michroma;
   font-size: 2.6rem;
@@ -200,6 +197,13 @@ img.displaySlide{
   margin-top: 200px;
   overflow: hidden;
 }
+.gallery > h2{
+  color: gold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
 
 .gallery_show img{
   width: 360px;
@@ -239,6 +243,79 @@ img.displaySlide{
     transform: scale(2.4);
   }
 
+  /* --- PLAN YOUR VISIT --- */
+.visit-section {
+    padding: 50px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.visit-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: gold;
+}
+
+.visit-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.visit-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.visit-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.visit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.visit-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.visit-card h3 {
+    font-size: 1.4rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.visit-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* --- MOBILE (600px and below) --- */
+@media (max-width: 600px) {
+    .visit-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .visit-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .visit-intro {
+        font-size: 1rem;
+    }
+}
 #first_pic, #second_pic, #third_pic, #fourth_pic{
   transition: opacity 0.5s ease;
 }
@@ -260,12 +337,15 @@ img.displaySlide{
   justify-content: left;
   padding: 10px;
   font-size: 2.0rem;
+  color: black;
+  font-weight: 300;
 }
 .contacts h2{
   text-align: center;
   justify-content: left;
   padding: 10px;
   font-size: 2.0rem;
+  color: gold;
 }
 .contacts a{
   color: #2fe70a;
@@ -307,17 +387,18 @@ p{
 
 footer {
   background-color: rgb(46, 137, 167);
-  color: #ddd;
+  color: black;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
+  /* border: solid black; */
 }
 
 .contacts, footer{
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(6px) saturate(150%);
   -webkit-backdrop-filter: blur(10px);
-  color: white;
+  color: black;
   text-align: center;
   padding: 40px 20px;
   /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
@@ -340,7 +421,7 @@ footer {
   margin-left: 20px;
   overflow: hidden;
   font-family: Arvo;
-  color: gold;
+  color: #666;
   text-shadow: #2fe70a 1px 1px;
 }
 .map{
@@ -384,46 +465,46 @@ footer {
   }
  /*THIS IS THE WELCOME SECTION*/
   .welcome{
-    border: solid green;
+    /* border: solid green; */
     padding-left: 5px;
     padding-right: 6px;
   }
   .welcome-text h2{
     font-size: 3rem;
-    border: solid deeppink;
+    /* border: solid deeppink; */
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
   }
   .welcome-text {
-    border: solid red;
+    /* border: solid red; */
     padding-top: 30px;
     max-height: 400px;
   }
 
   /*THIS IS THE ABOUT SECTION*/
   .about-details p{
-    font-size: 25px;
+    font-size: 250px;
   }
   .about-details{
-    border: solid blue;
-    max-height: 400px;
+    /* border: solid blue; */
+    max-height: 600px;
   }
 
   /*THIS IS THE GALLERY SECTION*/
   .gallery{
-    border: solid crimson;
+    /* border: solid crimson; */
     max-height: 200px;
   }
   .gallery-container{
     display: flex;
-    border: solid greenyellow;
+    /* border: solid greenyellow; */
     justify-content: space-evenly;
   }
   .gallery_show{
     width: 1000px;
     height: 150px;
     margin-left: 0px;
-    border: solid salmon;
+    /* border: solid salmon; */
     
   }
   .gallery_show img{
@@ -465,28 +546,28 @@ footer {
   /*THIS IS FOR THE ABOUT SECTION*/
   .about-details p{
     font-size: 30px;
-    border: solid red;
+    /* border: solid red; */
   }
 
   /*THIS IS FOR THE GALLERY SECTION*/
   .gallery{
-    border: solid red;
+    /* border: solid red; */
     overflow: scroll;
   }
   .gallery{
-    border: solid crimson;
+    /* border: solid crimson; */
     max-height: 200px;
   }
   .gallery-container{
     display: flex;
-    border: solid greenyellow;
+    /* border: solid greenyellow; */
     justify-content: space-evenly;
   }
   .gallery_show{
     width: 1000px;
     height: 150px;
     margin-left: 0px;
-    border: solid salmon;
+    /* border: solid salmon; */
     
   }
   .gallery_show img{
@@ -507,21 +588,19 @@ footer {
 
   /*THIS IS FOR THE WELCOME SECTION*/
   .welcome{
-    border: solid green;
+    /* border: solid green; */
     display: flex;
     flex-direction: column;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 25px;
     overflow: hidden;
-    height: 700px;
+    height: 780px;
   }
-  .welcome-image{
-    border: solid darkgoldenrod;
-  }
+  
 
   .welcome-text{
-    border: solid rgb(255, 2, 2);
+    /* border: solid rgb(255, 2, 2); */
     width: 400px;
     padding-right: 20px;
     height: 200px;
@@ -532,43 +611,55 @@ footer {
   }
   .welcome-text p{
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
   }
 
   /*THIS IS FOR THE ABOUT SECTION*/
   .about{
-    border: solid rgb(180, 250, 17);
-    height: 710px;
+    /* border: solid rgb(180, 250, 17); */
+    height: 560px;
+  }
+  .about > p{
+    font-size: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
   .about-details{
     height: 530px;
   }
   .about-details p{
     font-size: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 
   /*THIS IS FOR THE GALLERY SECTION*/
   .gallery{
-    border: solid rgb(11, 221, 155);
+    /* border: solid rgb(11, 221, 155); */
     min-height: 300px;
     margin-top: 0px;
     overflow: scroll;
   }
   .gallery-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     overflow: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     gap: 10px;
-    border: solid blue;
-    padding: 9px;
+    /* border: solid blue; */
+    padding-right: 2240px;
+    height: 270px;
+    overflow-y: hidden;
+    padding-left: 5px;
+
+
   }
   .gallery img{
-    border: solid rgb(243, 243, 4);
+    /* border: solid rgb(243, 243, 4); */
     flex-shrink: 0;
     width: 85%;
-    height: auto;
+    min-width: 97vw;
+    height: 260px;
     scroll-snap-align: center;
   }
   .description{
@@ -579,6 +670,7 @@ footer {
     transform: scale(2.4);
     display: none;/*THIS CODE IS TO HIDE THE RADIO BUTTONS*/
   }
+
   
   /*THIS IS THE MAP SECTION*/
   .map-section{
@@ -592,13 +684,13 @@ footer {
   }
   .map-section p{
     font-size: 1.4rem;
-    border: solid rgb(23, 239, 102);
+    /* border: solid rgb(23, 239, 102); */
     width: 100vw;
     margin-left: 0px;
     text-align: right;
     height: 420px;
     font-family: Arvo;
-    color: gold;
+    color: #666;
     font-weight: bold;
     padding: 10px;
   }
@@ -608,6 +700,13 @@ footer {
     height: 91vh;
     overflow: scroll;
     /* margin-left: auto; */
+  }
+
+  .contacts p{
+    font-size: 20px;
+  }
+  #footer_text{
+    font-size: 10px
   }
 
 }
