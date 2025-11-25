@@ -1,25 +1,62 @@
-*{
+/* ---- CROSS-BROWSER RESET ---- */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---- CROSS-BROWSER PREFIXES ---- */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.smooth {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.blur {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+}
 /* body{
     background-color: white;
     /* overflow: hidden; */
-    /* background-image: url(new_foreign_pic/pexels-umkreisel-app-956999.jpg);
+    /* background-image: url(nepexels-umkreisel-app-956999.jpg);
 } */ 
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(6, 6, 5);
   background-image: url("pexels-taryn-elliott-4840134.jpg"); /* your image path */
   background-size: cover;      /* makes it stretch nicely */
   background-repeat: no-repeat;
   background-attachment: fixed; /* keeps it still when you scroll */
   background-position: center; /* keeps it centered */
   color: white; /* optional, to make text readable */
+  overflow-x: hidden;
 }
-
 
 
 .slider{
@@ -55,7 +92,7 @@ img.displaySlide{
 }
 .slider-content h1{
   font-family: BBH Sans Bartle,  Arial, Helvetica, sans-serif;
-  font-size: 9.6rem;
+  font-size: 6.6rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.5);
   color: rgb(225, 244, 7);
@@ -72,41 +109,39 @@ img.displaySlide{
 
 
 
-
 /*THIS IS THE WELCOME SECTION*/
 .welcome{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  /* padding: 10px 10%; */
-  /* border: solid rgb(221, 15, 15); */
-  /* background-color: lightyellow; */
+  /* border: solid rgb(49, 245, 5); */
   width: 100vw;
-  /* border: solid blue; */
   height: 500px;
 }
 .welcome-image img {
-  width: 380px;
+  width: 360px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  /* border: solid rgb(221, 15, 15); */
   z-index: 10; /* ensures the person image appears above background layers */
   /* z-index: 10 makes sure the person photo is not hidden behind any other element */
 }
 .welcome-text{
   text-align: right;
-  /* border: solid green; */
+  /* border: solid rgb(57, 7, 238); */
   width: 60vw;
-  padding: 2px 20px;
-  height: 200px;
-  padding: 110px 30px;
+  height: 500px;
   font-family: Averia Gruesa Libre;
+  overflow: hidden;
+  padding-top: 10px;
 }
 .welcome-text h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   color: #72d60f;
   font-family: Playwrite AU TAS;
   padding-bottom: 20px;
+  text-shadow: #2fe70a 1px 1px;
 }
 .welcome-text p {
   font-size: 2.5rem;
@@ -137,13 +172,12 @@ img.displaySlide{
 .about-details{
   justify-content: center;
   text-align: left;
-  /* border: solid greenyellow; */
   padding-right: 400px;
-  /* border: solid floralwhite; */
+  border: solid floralwhite;
   height: 600px;
   align-items: center;
   padding: 30px 20px;
-  overflow: scroll;
+  overflow: hidden;
 }
 .about-details h3{
   font-size: 1.9rem;
@@ -156,12 +190,15 @@ img.displaySlide{
 }
 
 
+
 /*this is to control the gallery*/
 .gallery{
   width: 100vw;
   height: 400px;
   /* border: solid blue; */
   text-align: center;
+  margin-top: 200px;
+  overflow: hidden;
 }
 
 .gallery_show img{
@@ -169,12 +206,13 @@ img.displaySlide{
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   transition: transform 0.3s;
+  /* border: solid red; */
 }
 .gallery_show{
   display: inline-block;
-  /* border: solid red; */
-  gap: 200px;
-  margin: 45px;
+  /* border: solid rgb(227, 216, 11); */
+  /* gap: 50px; */
+  margin: 0px;
   
 }
 .gallery_show img:hover{
@@ -183,6 +221,7 @@ img.displaySlide{
   box-shadow: 0 10px 20px rgba(252, 251, 251, 0.4);
 }
 
+/*THIS IS THE RADIO BUTTONS SECTION*/
 .radio_buttons{
   display: flex;
   justify-content: center;
@@ -203,7 +242,6 @@ img.displaySlide{
 #first_pic, #second_pic, #third_pic, #fourth_pic{
   transition: opacity 0.5s ease;
 }
-
 
 
 /*THIS IS FOR THE CONTROL OF THE CONTACT*/
@@ -288,7 +326,7 @@ footer {
 .map-section{
   display: flex;
   /* border: solid darkorchid; */
-  height: 500px;
+  height: 600px;
 }
 #map-title{
   font-size: 2rem;
@@ -300,20 +338,19 @@ footer {
   /* border: solid rgb(227, 251, 11); */
   width:80vw;
   margin-left: 20px;
-  overflow: scroll;
+  overflow: hidden;
   font-family: Arvo;
-  color: rgb(28, 226, 68);
+  color: gold;
   text-shadow: #2fe70a 1px 1px;
 }
 .map{
   /* border: solid red; */
   width: 600px;
-  height: 490px;
+  height: 600px;
   overflow: scroll;
   margin-left: auto;
   margin-right: 10px;
 }
-
 
 
 
@@ -335,141 +372,215 @@ footer {
 
 
 
-@media (max-width: 480px){
-  /*THIS CONTROLS THE SLIDER SECTION*/
-  .slider{
-    /* border: solid green; */
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-  }
-  .slider img{
-    /* border: solid red; */
-    height: 100vh;
-    
-  }
-  .slider-content{
-    /* border: solid pink; */
-    text-align: left;
-    justify-content: left;
-  }
+
+/*THIS IS FOR WHEN THW MOBILE PHONE HAS BEEN SWITCHED TO LANDSCEPE MODE*/
+@media (max-width: 812px) and (orientation: landscape)
+{
   .slider-content h1{
-    font-size: 30px;
-    padding-bottom: 30px;
+    font-size: 3.5rem;
   }
   .slider-content p{
-    font-size: 25px;
-    /* border: solid blue; */
+    font-size: 30px;
   }
-
-  /*THIS CONTROLS THE WELCOME SECTION*/
+ /*THIS IS THE WELCOME SECTION*/
   .welcome{
-    /* border: solid rgb(171, 95, 171); */
-    overflow: scroll;
-    margin-left: 0px;
-    display: inline-block;
-    flex-wrap: wrap;
-    overflow: hidden;
-    height: 530px;
-  }
-  .welcome-image img{
-    width: 373px;
-    height: 270px;
-    text-align: left;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .welcome-text {
-    /* border: solid white; */
-    padding: 5px;
-  }
-  .welcome h2{
-    text-align: center;
-    justify-content: center;
+    border: solid green;
+    padding-left: 5px;
+    padding-right: 6px;
   }
   .welcome-text h2{
-    /* border: solid indianred; */
-    font-size: 20px;
-    text-align: center;
-    justify-content: left;
-    width: 100vw;
-    margin: 0px;
+    font-size: 3rem;
+    border: solid deeppink;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
   }
-  .welcome-text p{
-    font-size: 29.4px;
-    /* border: solid salmon; */
-    width: 700px;
-    text-align: left;
-    padding-right: 379px;
+  .welcome-text {
+    border: solid red;
+    padding-top: 30px;
+    max-height: 400px;
   }
 
-  /*THIS CONTROLS THE ABOUT SECTION*/
-   .about{
-    /* border: solid rgb(242, 69, 21); */
-    overflow: hidden;
-    width: 100vw;
-    height: 630px;
-  } 
-  .about  p{
-    font-size: 1.4rem;
-    /* border: solid rgb(200, 37, 37); */
+  /*THIS IS THE ABOUT SECTION*/
+  .about-details p{
+    font-size: 25px;
   }
   .about-details{
-    font-size: 2rem;
-    overflow: hidden;
-    height: 900vh;
-    /* border: solid fuchsia; */
-    text-align: right;
-  }
-  .about-details h3{
-    font-size: 2.0rem;
-  }
-  .about-details p{
-    font-size: 1.3rem;
+    border: solid blue;
+    max-height: 400px;
   }
 
-/*THIS CONTROLS THE GALLERY SECTION*/
+  /*THIS IS THE GALLERY SECTION*/
   .gallery{
-    /* border: solid red; */
-    height: 300px;
+    border: solid crimson;
+    max-height: 200px;
+  }
+  .gallery-container{
+    display: flex;
+    border: solid greenyellow;
+    justify-content: space-evenly;
+  }
+  .gallery_show{
+    width: 1000px;
+    height: 150px;
+    margin-left: 0px;
+    border: solid salmon;
+    
+  }
+  .gallery_show img{
+    width: 200px;
+  }
+  .description{
+    font-size: 1rem;
+  }
+  /*THIS IS FOR THE MAP SECTION*/
+  .map-section p{
+    font-size: 30px;
+  }
+  .map{
+    margin-right: 1px;
+  }
+}
+
+@media (max-width: 1024px){
+  .slides{
+    border: solid green;
+    height: 100vh;
+  }
+  .slider-content h1{
+    font-size: 4rem;
+  }
+  .slider-content p{
+    font-size: 30px;
+  }
+
+  /*THIS IS FOR THE WELCOME SECTION*/
+  .welcome{
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  .welcome-text h2{
+    font-size: 45px;
+  }
+
+  /*THIS IS FOR THE ABOUT SECTION*/
+  .about-details p{
+    font-size: 30px;
+    border: solid red;
+  }
+
+  /*THIS IS FOR THE GALLERY SECTION*/
+  .gallery{
+    border: solid red;
+    overflow: scroll;
+  }
+  .gallery{
+    border: solid crimson;
+    max-height: 200px;
+  }
+  .gallery-container{
+    display: flex;
+    border: solid greenyellow;
+    justify-content: space-evenly;
+  }
+  .gallery_show{
+    width: 1000px;
+    height: 150px;
+    margin-left: 0px;
+    border: solid salmon;
+    
+  }
+  .gallery_show img{
+    width: 200px;
+  }
+
+  /*THIS IS FOR THE MAP SECTION*/
+  .map-section p{
+    font-size: 29px;
+  }
+}
+
+/*THIS IS FOR PHONES IN PORTRAIT MODE*/
+@media (max-width: 480px) and (orientation: portrait){
+  .slider-content h1{
+    font-size: 2rem;
+  }
+
+  /*THIS IS FOR THE WELCOME SECTION*/
+  .welcome{
+    border: solid green;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 25px;
+    overflow: hidden;
+    height: 700px;
+  }
+  .welcome-image{
+    border: solid darkgoldenrod;
+  }
+
+  .welcome-text{
+    border: solid rgb(255, 2, 2);
+    width: 400px;
+    padding-right: 20px;
+    height: 200px;
+  }
+  .welcome-text h2{
+    font-size: 35px;
+    text-align: center;
+  }
+  .welcome-text p{
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  /*THIS IS FOR THE ABOUT SECTION*/
+  .about{
+    border: solid rgb(180, 250, 17);
+    height: 710px;
+  }
+  .about-details{
+    height: 530px;
+  }
+  .about-details p{
+    font-size: 20px;
+  }
+
+  /*THIS IS FOR THE GALLERY SECTION*/
+  .gallery{
+    border: solid rgb(11, 221, 155);
+    min-height: 300px;
+    margin-top: 0px;
+    overflow: scroll;
   }
   .gallery-container {
     display: flex;
-    overflow-x: auto;
+    flex-direction: column;
+    overflow: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     gap: 10px;
-    /* border: solid blue; */
+    border: solid blue;
+    padding: 9px;
   }
   .gallery img{
-    /* border: solid rgb(243, 243, 4); */
+    border: solid rgb(243, 243, 4);
     flex-shrink: 0;
     width: 85%;
     height: auto;
-    scroll-snap-align: center;
+    scroll-snap-align: center;
   }
   .description{
     font-size: 4rem;
   }
 
-  /* .radio_buttons{
-    height: 50px;
-    border: solid deeppink;
-    gap: 90px;
-  } */
   input[type="radio"] {
     transform: scale(2.4);
     display: none;/*THIS CODE IS TO HIDE THE RADIO BUTTONS*/
   }
   
-  /*THIS CONTROLS THE CONTACTS SECTION*/
-  .contacts{
-    border: solid rgb(213, 193, 193);
-  }
-  .contacts p{
-    overflow: hidden;
-    font-size: 1.1rem;
-  }
-  /*THIS CONTROLS THE MAP SECTION*/
+  /*THIS IS THE MAP SECTION*/
   .map-section{
   display: inline-block;
   width: 100vw;
@@ -484,13 +595,12 @@ footer {
     border: solid rgb(23, 239, 102);
     width: 100vw;
     margin-left: 0px;
-    text-align: left;
-    height: 330px;
+    text-align: right;
+    height: 420px;
     font-family: Arvo;
     color: gold;
     font-weight: bold;
     padding: 10px;
-    
   }
   .map{
     /* border: solid red; */
@@ -499,6 +609,5 @@ footer {
     overflow: scroll;
     /* margin-left: auto; */
   }
-  
-}
 
+}
