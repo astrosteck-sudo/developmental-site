@@ -166,9 +166,9 @@ img.displaySlide{
 .about > p{
   font-family: anton;
   color: gold;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2);
   font-size: 2.5rem;
-  font-weight: bolder;
+  /* font-weight: bold; */
 }
 .about-details{
   justify-content: center;
@@ -375,10 +375,16 @@ p{
 
 /* THIS IS FOR THE TESTIMONIALS*/
 .testimonials {
-  background-color: rgb(46, 137, 167);
+  margin-top: 40px;
+  background-color: #f7f7f7;
   /* padding: 10px 10%; */
   text-align: center;
   /* border: solid rebeccapurple; */
+}
+.testimonials > h2{
+  color: gold;
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  font-size: 3rem
 }
 
 .testimonial-container {
@@ -390,12 +396,12 @@ p{
 }
 
 .testimonial {
-  width: 200px;
-  background-color: rgb(46, 137, 167);
+  width: 300px;
+  background-color: rgb(166, 220, 109);
   padding: 20px;
   border-radius: 10px;
   font-style: italic;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.);
   /* border: solid lightpink; */
 }
 
@@ -740,11 +746,11 @@ footer {
   }
   .map-section p{
     font-size: 1.4rem;
-    border: solid rgb(23, 239, 102);
+    /* border: solid rgb(23, 239, 102); */
     width: 100vw;
     margin-left: 0px;
     text-align: right;
-    height: 300px;
+    min-height: 300px;
     font-family: Arvo;
     color: #666;
     font-weight: bold;
@@ -761,8 +767,17 @@ footer {
   .contacts p{
     font-size: 20px;
   }
-  #footer_text{
-    font-size: 10px
+  .contacts > p{
+    padding-left: 0px;
+    margin-left: 0px;
+    font-size: 17px;
   }
+  #footer_text{
+    font-size: 17px;
+  }
+  .testimonials > h2{
+  font-size: 2.3rem;
+  padding-bottom: 20px;
 
+}
 }
