@@ -1,19 +1,3 @@
-/*<body>
-    
-    <div class="slider">
-        <div class="slides">
-            <img class="slide" src="images/eye.jpg">
-            <img class="slide" src="images/food pot.jpg">
-            <img class="slide" src="images/continental.jpg">
-        </div>
-        <button class="prev" onclick="prevSlide()">&#10094</button>
-        <button class="next" onclick="nextSlide()">&#10095</button>
-    </div>
-
-
-     <script src="index.js"></script>
-</body>*/
-
 const slides = document.querySelectorAll(".slides img")
 let slideIndex = 0
 let intervalId = null
@@ -39,7 +23,6 @@ function showSlide(index){
     slides[slideIndex].classList.add("displaySlide");
 }
 
-
 function nextSlide(){
     slideIndex++
     showSlide(slideIndex)
@@ -54,58 +37,58 @@ let image_description = document.getElementById("image_description")
 const second_slide = document.getElementById("second")
 const first_slide = document.getElementById("first")
 const third_slide = document.getElementById("third")
-second_slide.addEventListener("click", () => {
+first_slide.addEventListener("click", () => {
     [first_pic,second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 0)
     setTimeout(() => {
-        first_pic.src = "pexels-gabriela-palai-129458-395196(1).jpg";
+        first_pic.src = "Kyabobo-National-Park-Head-Quaters-And-Entrance-Nkwanta-Ghana-TortoisePathcom-11-1024x684.webp";
         image_description.textContent = "NewLife"
-        second_pic.src = "pexels-harold-granados-115813190-9984286.jpg";
-        third_pic.src = "pexels-simonmigaj-746386.jpg";
-        fourth_pic.src = "pexels-jjagtenberg-103123.jpg";
+        second_pic.src = "kente_town.jpeg";
+        third_pic.src = "sunset_forest.jpeg";
+        fourth_pic.src = "volta-lake.jpg";
         [first_pic, second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 1);
     }, 400);
 });
 
-first_slide.addEventListener("click", () => {
+second_slide.addEventListener("click", () => {
     [first_pic,second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 0)
     setTimeout(() => {
-        first_pic.src = "pexels-quang-nguyen-vinh-222549-2153722.jpg";
-        second_pic.src = "pexels-quang-nguyen-vinh-222549-6877880.jpg";
-        third_pic.src = "pexels-mikhail-nilov-9207076.jpg";
-        fourth_pic.src = "pexels-diana-reyes-227887231-32514943.jpg";
+        first_pic.src = "kakum_canopy_walk.jpg";
+        second_pic.src = "a3-1.webp";
+        third_pic.src = "AF1QipM0FYBK-yC2GDx4mY0oP1UM9kPjRX6B1UJnn21ns680-w680-h510.jpg";
+        fourth_pic.src = "caption.jpg";
         [first_pic, second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 1);
-    }, 400);
+    }, 400);//gallery_imges/AF1QipM0FYBK-yC2GDx4mY0oP1UM9kPjRX6B1UJnn21ns680-w680-h510.jpg gallery_imges/caption.jpg
 });
 
 third_slide.addEventListener("click", () => {
     [first_pic,second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 0)
     setTimeout(() => {
-        first_pic.src = "pexels-zulfugarkarimov-34313512.jpg";
-        second_pic.src = "pexels-ozgomz-840719.jpg";
-        third_pic.src = "pexels-nandhukumar-450441(1).jpg";
-        fourth_pic.src = "pexels-svliiim-34305420.jpg";
+        first_pic.src = "Amedzofe2.webp";
+        second_pic.src = "phare-cap-saint-paul.jpg";
+        third_pic.src = "nn.jpg";
+        fourth_pic.src = "Kalakpa-Game-Production-Reserve.jpg";
         [first_pic, second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 1);
     }, 400);
 });
 
 const sets = [
   [
-    "pexels-quang-nguyen-vinh-222549-2153722.jpg",
-    "pexels-quang-nguyen-vinh-222549-6877880.jpg",
-    "pexels-mikhail-nilov-9207076.jpg",
-    "pexels-diana-reyes-227887231-32514943.jpg"
+    "Kyabobo-National-Park-Head-Quaters-And-Entrance-Nkwanta-Ghana-TortoisePathcom-11-1024x684.webp",
+    "Kalakpa-Game-Production-Reserve.jpg",
+    "caption.jpg",
+    "volta-lake.jpg"
   ],
   [
-    "pexels-gabriela-palai-129458-395196(1).jpg",
-    "pexels-harold-granados-115813190-9984286.jpg",
-    "pexels-simonmigaj-746386.jpg",
-    "pexels-jjagtenberg-103123.jpg"
+    "nn.jpg",
+    "phare-cap-saint-paul.jpg",
+    "kente_town.jpeg",
+    "Amedzofe2.webp"
   ],
   [
-    "pexels-zulfugarkarimov-34313512.jpg",
-    "pexels-ozgomz-840719.jpg",
-    "pexels-nandhukumar-450441(1).jpg",
-    "pexels-svliiim-34305420.jpg"
+    "kakum_canopy_walk.jpg",
+    "Fort-Prinzenstein.webp",
+    "sunset_forest.jpeg",
+    "AF1QipM0FYBK-yC2GDx4mY0oP1UM9kPjRX6B1UJnn21ns680-w680-h510.jpg"
   ]
 ];
 // ============ MOBILE LOGIC ============ //
@@ -131,3 +114,29 @@ if (window.innerWidth <= 768) {
     });
   }
 }
+
+/*<body>
+    
+    <div id="mybox">
+        Click me😊 
+    </div>
+
+    <button id="mybutton">Click me</button>
+
+    <script src="index.js"></script>
+</body>*/
+// const mybox = document.getElementById("mybox")
+// const mybutton = document.getElementById("mybutton")
+
+// mybox.addEventListener("click", event => {
+//     event.target.style.backgroundColor = "tomato"; //the target is what we clicked on
+//     event.target.textContent = "OUCH🤕"
+// });
+// mybox.addEventListener("mouseover", event => {
+//     event.target.style.backgroundColor = "yellow"; //the target is what we clicked on
+//     event.target.textContent = "Don't do it 😯"
+// })
+// mybox.addEventListener("mouseout", event => {
+//     event.target.style.backgroundColor = "lightgreen"; //the target is what we clicked on
+//     event.target.textContent = "Click Me 😊"
+// })
