@@ -152,7 +152,7 @@ img.displaySlide{
   line-height: 1.9;
   color: #666;
   text-align: right;
-  text-shadow: #2fe70a 1px 1px;
+  /* text-shadow: #2fe70a 1px 1px; */
   /* border: solid red; */
   padding-top: 0px;
   font-family: Michroma;
@@ -208,7 +208,7 @@ img.displaySlide{
 /*this is to control the gallery*/
 .gallery{
   width: 100vw;
-  height: 280px;
+  height: 350px;
   /* border: solid blue; */
   text-align: center;
   margin-top: 50px;
@@ -225,10 +225,15 @@ img.displaySlide{
   margin-top: 100px;
   text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.5);
 }
-
+.description{
+  color: gold;
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  font-size: 25px;
+  font-weight: bold;
+}
 
 .gallery_show img{
-  width: 360px;
+  max-width: 360px;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   transition: transform 0.3s;
@@ -413,8 +418,8 @@ p{
   border-radius: 10px;
   height: 550px;
   font-style: italic;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.);
-  border: solid lightpink;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  /* border: solid lightpink; */
 }
 .testimonial img{
   height: 250px;
@@ -519,26 +524,36 @@ footer {
   .slider-content p{
     font-size: 30px;
   }
+  .slider{
+    /* border: solid rgb(27, 237, 100); */
+    /* width: 20px; */
+    max-height: 100vh;
+  }
+  .slides{
+    /* border: solid red; */
+    padding-bottom: 0px;
+  }
+  .s
  /*THIS IS THE WELCOME SECTION*/
   .welcome{
-    border: solid green;
+    /* border: solid green; */
     padding-left: 5px;
     padding-right: 6px;
   }
   .welcome-text h2{
     font-size: 3rem;
-    border: solid deeppink;
+    /* border: solid deeppink; */
     padding: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
   }
   .welcome-text {
-    border: solid rgb(47, 0, 255);
+    /* border: solid rgb(47, 0, 255); */
     padding-top: 30px;
     max-height: 540px;
   }
   .welcome-text p{
-    border: solid green;
+    /* border: solid green; */
     padding-top: 0px;
     font-size: 1px;
   }
@@ -607,7 +622,8 @@ footer {
   .gallery{
     margin-top: 40px;
     /* border: solid red; */
-    height: 200px;
+    height: 280px;
+    overflow: scroll;
   }
   #gallery-header{
     margin-top: 340px;
@@ -618,7 +634,11 @@ footer {
     /* border: solid blue; */
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
+  }
+  .gallery-container img{
+    /* border: solid fuchsia; */
+    width: 250px;
   }
   .map-section p{
     /* border: solid red; */
@@ -669,22 +689,26 @@ footer {
     /* border: solid crimson; */
     max-height: 200px;
     overflow: scroll;
+    margin-top: 5px;
   }
-  
+  #gallery-header{
+    margin-top: 210px;
+    /* border: solid goldenrod; */
+  }
   .gallery-container{
     display: flex;
     /* border: solid greenyellow; */
     justify-content: space-evenly;
+    padding-left: 7px;
   }
   .gallery_show{
     width: 1000px;
     height: 150px;
     margin-left: 0px;
     /* border: solid salmon; */
-    
   }
   .gallery_show img{
-    width: 200px;
+    width: 195px;
   }
 
   /*THIS IS FOR THE MAP SECTION*/
@@ -773,7 +797,7 @@ footer {
     gap: 10px;
     /* border: solid blue; */
     padding-right: 4485px;
-    height: 270px;
+    height: 300px;
     overflow-y: hidden;
     padding-left: 5px;
     -ms-overflow-style: none;
@@ -841,7 +865,7 @@ footer {
     overflow: scroll;
     /* margin-left: auto; */
   }
-  .contacts p{
+  acts p{
     font-size: 20px;
   }
   .contacts > p{
