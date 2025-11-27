@@ -113,6 +113,12 @@ img.displaySlide{
   /* border: solid rgb(49, 245, 5); */
   width: 100vw;
   height: 500px;
+  margin-bottom: 20px;
+}
+#explore{
+  color: rgb(255, 208, 0);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+
 }
 .welcome-image img {
   width: 360px;
@@ -126,7 +132,7 @@ img.displaySlide{
   text-align: right;
   /* border: solid rgb(57, 7, 238); */
   width: 60vw;
-  height: 500px;
+  height: 590px;
   font-family: Averia Gruesa Libre;
   overflow: hidden;
   padding-top: 10px;
@@ -136,15 +142,20 @@ img.displaySlide{
   color: gold;
   font-family: Playwrite AU TAS;
   padding-bottom: 20px;
+  padding-top: 50px;
   text-shadow: #2fe70a 1px 1px;
   text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  /* border: solid red; */
 }
 .welcome-text p {
-  font-size: 2.5rem;
-  line-height: 1.6;
+  font-size: 2.0rem;
+  line-height: 1.9;
   color: #666;
   text-align: right;
   text-shadow: #2fe70a 1px 1px;
+  /* border: solid red; */
+  padding-top: 0px;
+  font-family: Michroma;
 }
 
 /* 👇 THIS IS THE ABOUT SECTION */
@@ -197,10 +208,10 @@ img.displaySlide{
 /*this is to control the gallery*/
 .gallery{
   width: 100vw;
-  height: 400px;
+  height: 280px;
   /* border: solid blue; */
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   overflow: hidden;
 }
 #gallery-header{
@@ -211,7 +222,7 @@ img.displaySlide{
   background-attachment: fixed;
   /* border: solid; */
   text-align: center;
-  margin-top: 250px;
+  margin-top: 100px;
   text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.5);
 }
 
@@ -400,9 +411,14 @@ p{
   background-color: rgb(166, 220, 109);
   padding: 20px;
   border-radius: 10px;
+  height: 550px;
   font-style: italic;
   box-shadow: 0 5px 10px rgba(0,0,0,0.);
-  /* border: solid lightpink; */
+  border: solid lightpink;
+}
+.testimonial img{
+  height: 250px;
+  width: 100vw;
 }
 
 footer {
@@ -438,7 +454,7 @@ footer {
   text-align: center;
   /* border: solid forestgreen; */
 }
-.map-section p{
+.map-section > p{
   font-size: 3rem;
   /* border: solid rgb(227, 251, 11); */
   width:80vw;
@@ -449,6 +465,7 @@ footer {
   text-shadow: #2fe70a 1px 1px;
   box-shadow: 0 14px 16px rgba(0,0,0,0.15);
   transition: ease 3s;
+  font-family: Michroma;
 }
 .map{
   /* border: solid red; */
@@ -457,6 +474,15 @@ footer {
   overflow: scroll;
   margin-left: auto;
   margin-right: 10px;
+}
+#map-command{
+  border: solid blue;
+  color: gold;
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  height: 50px;
+  text-align: center;
+  background-color: #27c155;
+  padding-top: 5px;
 }
 .map-section p:hover {
     transform: translateY(-5px);
@@ -484,7 +510,7 @@ footer {
 
 
 
-/*THIS IS FOR WHEN THW MOBILE PHONE HAS BEEN SWITCHED TO LANDSCEPE MODE*/
+/*THIS IS FOR WHEN THE MOBILE PHONE HAS BEEN SWITCHED TO LANDSCEPE MODE*/
 @media (max-width: 812px) and (orientation: landscape)
 {
   .slider-content h1{
@@ -495,20 +521,26 @@ footer {
   }
  /*THIS IS THE WELCOME SECTION*/
   .welcome{
-    /* border: solid green; */
+    border: solid green;
     padding-left: 5px;
     padding-right: 6px;
   }
   .welcome-text h2{
     font-size: 3rem;
-    /* border: solid deeppink; */
+    border: solid deeppink;
     padding: 0px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
   }
   .welcome-text {
-    /* border: solid red; */
+    border: solid rgb(47, 0, 255);
     padding-top: 30px;
-    max-height: 400px;
+    max-height: 540px;
+  }
+  .welcome-text p{
+    border: solid green;
+    padding-top: 0px;
+    font-size: 1px;
   }
 
   /*THIS IS THE ABOUT SECTION*/
@@ -554,13 +586,31 @@ footer {
 }
 
 @media (max-width: 1080px) and (orientation: landscape){
+  .slider{
+    /* border: solid blue; */
+    height: 724px;
+  }
+  .welcome{
+    /* border: solid red; */
+    margin-top: 0px;
+  }
+  .welcome-text h2{
+    padding-top: 2px;
+    /* border: solid rgb(8, 236, 179); */
+    margin-top: 20px;
+  }
+  .welcome-text p{
+    padding-top: 5px;
+    /* border: solid black; */
+    font-size: 26px;
+  }
   .gallery{
     margin-top: 40px;
     /* border: solid red; */
     height: 200px;
   }
   #gallery-header{
-    margin-top: 300px;
+    margin-top: 340px;
     /* border: solid gray; */
     margin-bottom: 0px;
   }
@@ -571,7 +621,7 @@ footer {
     gap: 10px;
   }
   .map-section p{
-    border: solid red;
+    /* border: solid red; */
     font-size: 42px;
     padding-left: 10px;
   }
@@ -592,9 +642,20 @@ footer {
   .welcome{
     padding-left: 10px;
     padding-right: 15px;
+    /* border: solid red; */
   }
   .welcome-text h2{
     font-size: 45px;
+    /* border: solid green; */
+    font-size: 2rem;
+    padding-top: 0px;
+    margin-top: 30px;
+  }
+  .welcome-text p{
+    /* border: solid rgb(209, 148, 148); */
+    padding-top: 0px;
+    font-size: 21.7px;
+    padding-bottom: 50px;
   }
 
   /*THIS IS FOR THE ABOUT SECTION*/
@@ -650,25 +711,28 @@ footer {
     padding-right: 0px;
     padding-top: 25px;
     overflow: hidden;
-    height: 780px;
+    height: 890px;
   }
-  
-
   .welcome-text{
     /* border: solid rgb(255, 2, 2); */
     width: 400px;
     padding-right: 20px;
-    height: 200px;
+    height: 350px;
+    overflow: hidden;
+    padding-top: 0px;
   }
   .welcome-text h2{
     font-size: 35px;
     text-align: center;
+    /* border: solid blue; */
+    height: 40px;
   }
   .welcome-text p{
-    font-size: 20px;
-    padding-left: 15px;
+    font-size: 15px;
+    padding-left: 20px;
     padding-right: 10px;
-    color: #666;
+    color: #e21616;
+    padding-top: 20px;
   }
 
   /*THIS IS FOR THE ABOUT SECTION*/
@@ -677,15 +741,20 @@ footer {
     height: 560px;
   }
   .about > p{
+    /* border: solid red; */
     font-size: 20px;
 
   }
   .about-details{
+    /* border: solid blue; */
     height: 530px;
   }
   .about-details p{
     font-size: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 2px 20px;
+    padding-left: 10px;
   }
 
   /*THIS IS FOR THE GALLERY SECTION*/
@@ -703,7 +772,7 @@ footer {
     scroll-behavior: smooth;
     gap: 10px;
     /* border: solid blue; */
-    padding-right: 2240px;
+    padding-right: 4485px;
     height: 270px;
     overflow-y: hidden;
     padding-left: 5px;
@@ -744,7 +813,7 @@ footer {
     /* border: solid rgb(213, 216, 231); */
     width: 100vw;
   }
-  .map-section p{
+  .map-section > p{
     font-size: 1.4rem;
     /* border: solid rgb(23, 239, 102); */
     width: 100vw;
@@ -757,6 +826,14 @@ footer {
     padding: 10px;
     /* text-shadow: 0px 16px 20px rgb(26, 245, 14); */
   }
+  #map-command{
+  border: solid blue;
+  color: gold;
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  max-height: 50px;
+  text-align: center;
+  background-color: #27c155;
+}
   .map{
     /* border: solid red; */
     width: 100vw;
