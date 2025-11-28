@@ -117,7 +117,7 @@ img.displaySlide{
 }
 #explore{
   color: rgb(255, 208, 0);
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2);
 
 }
 .welcome-image img {
@@ -143,8 +143,8 @@ img.displaySlide{
   font-family: Playwrite AU TAS;
   padding-bottom: 20px;
   padding-top: 50px;
-  text-shadow: #2fe70a 1px 1px;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  /* text-shadow: #2fe70a 1px 1px; */
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2);
   /* border: solid red; */
 }
 .welcome-text p {
@@ -177,7 +177,7 @@ img.displaySlide{
 .about > p{
   font-family: anton;
   color: gold;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.1);
   font-size: 2.5rem;
   /* font-weight: bold; */
 }
@@ -194,7 +194,7 @@ img.displaySlide{
 .about-details h3{
   font-size: 1.9rem;
   color: gold;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
 }
 .about-details p{
   color: #666;
@@ -223,11 +223,11 @@ img.displaySlide{
   /* border: solid; */
   text-align: center;
   margin-top: 100px;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.5);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
 }
 .description{
   color: gold;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
   font-size: 25px;
   font-weight: bold;
 }
@@ -282,7 +282,8 @@ img.displaySlide{
     font-size: 2.2rem;
     margin-bottom: 15px;
     color: gold;
-    text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+    text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
+    /* border: solid red; */
 }
 
 .visit-intro {
@@ -374,9 +375,9 @@ img.displaySlide{
   text-align: center;
   justify-content: left;
   padding: 10px;
-  font-size: 2.0rem;
+  font-size: 2.8rem;
   color: gold;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
 }
 .contacts a{
   color: #2fe70a;
@@ -400,7 +401,7 @@ p{
 }
 .testimonials > h2{
   color: gold;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
   font-size: 3rem
 }
 
@@ -482,7 +483,7 @@ footer {
   margin-right: 10px;
 }
 #map-command{
-  border: solid blue;
+  /* border: solid blue; */
   color: gold;
   text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
   height: 50px;
@@ -621,6 +622,10 @@ footer {
     /* border: solid black; */
     font-size: 26px;
   }
+  .about > p{
+    /* border: solid red; */
+    font-size: 34px;
+  }
   .gallery{
     margin-top: 40px;
     /* border: solid red; */
@@ -732,6 +737,12 @@ footer {
   .slider-content h1{
     font-size: 2rem;
   }
+  .slider-content p{
+    /* border: solid red; */
+    font-size: 20px;
+    margin-left: 0px;
+    padding-right: 20px;
+  }
 
   /*THIS IS FOR THE WELCOME SECTION*/
   .welcome{
@@ -743,6 +754,15 @@ footer {
     padding-top: 25px;
     overflow: hidden;
     height: 890px;
+    padding-top: 10px;
+    /* margin-top: 0px; */
+    margin-bottom: 0px;
+    height: 800px;
+    padding-bottom: 0px;
+  }
+  .welcome-image{
+    /* border: solid brown; */
+    height: 400px;
   }
   .welcome-text{
     /* border: solid rgb(255, 2, 2); */
@@ -762,7 +782,7 @@ footer {
     font-size: 15px;
     padding-left: 20px;
     padding-right: 10px;
-    color: #e21616;
+    color: #666;
     padding-top: 20px;
   }
 
@@ -782,7 +802,7 @@ footer {
   }
   .about-details p{
     font-size: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     background: white;
     border-radius: 2px 20px;
     padding-left: 10px;
@@ -794,6 +814,7 @@ footer {
     min-height: 300px;
     margin-top: 0px;
     overflow: scroll;
+    margin-bottom: 0px;
   }
   .gallery-container {
     display: flex;
@@ -827,7 +848,10 @@ footer {
   .description{
     font-size: 4rem;
   }
-
+  .visit-section{
+    /* border: solid green; */
+    margin-top: 0px;
+  }
   input[type="radio"] {
     transform: scale(2.4);
     display: none;/*THIS CODE IS TO HIDE THE RADIO BUTTONS*/
@@ -858,7 +882,7 @@ footer {
     /* text-shadow: 0px 16px 20px rgb(26, 245, 14); */
   }
   #map-command{
-  border: solid blue;
+  /* border: solid blue; */
   color: gold;
   text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
   max-height: 50px;
@@ -889,7 +913,7 @@ footer {
   /* border: solid green; */
   }
   #footer_text p{
-    border: solid red;
+    /* border: solid red; */
     font-size: 17px;
   }
 }
@@ -908,7 +932,7 @@ footer {
     margin-top: 5px;
   }
   .map-section p{
-    border: solid red;
+    /* border: solid red; */
     font-size: 43px;
   }
 }
