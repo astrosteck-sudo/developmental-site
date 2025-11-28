@@ -208,7 +208,7 @@ img.displaySlide{
 /*this is to control the gallery*/
 .gallery{
   width: 100vw;
-  height: 350px;
+  height: 300px;
   /* border: solid blue; */
   text-align: center;
   margin-top: 50px;
@@ -238,12 +238,13 @@ img.displaySlide{
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   transition: transform 0.3s;
   /* border: solid red; */
+  max-height: 230px;
 }
 .gallery_show{
   display: inline-block;
   /* border: solid rgb(227, 216, 11); */
   /* gap: 50px; */
-  margin: 0px;
+  margin: 20px;
   
 }
 .gallery_show img:hover{
@@ -467,8 +468,8 @@ footer {
   overflow: hidden;
   font-family: Arvo;
   color: #666;
-  text-shadow: #2fe70a 1px 1px;
-  box-shadow: 0 14px 16px rgba(0,0,0,0.15);
+  /* text-shadow: #2fe70a 1px 1px; */
+  /* box-shadow: 0 14px 16px rgba(0,0,0,0.15); */
   transition: ease 3s;
   font-family: Michroma;
 }
@@ -585,6 +586,7 @@ footer {
     /* border: solid salmon; */
     
   }
+  
   .gallery_show img{
     width: 200px;
   }
@@ -622,7 +624,7 @@ footer {
   .gallery{
     margin-top: 40px;
     /* border: solid red; */
-    height: 280px;
+    height: 247px;
     overflow: scroll;
   }
   #gallery-header{
@@ -639,6 +641,11 @@ footer {
   .gallery-container img{
     /* border: solid fuchsia; */
     width: 250px;
+    max-height: 187px;
+  }
+  .gallery_show{
+    /* border: solid red; */
+    margin: 0px;
   }
   .map-section p{
     /* border: solid red; */
@@ -648,7 +655,7 @@ footer {
 }
 @media (max-width: 1024px){
   .slides{
-    border: solid green;
+    /* border: solid green; */
     height: 100vh;
   }
   .slider-content h1{
@@ -687,7 +694,7 @@ footer {
   /*THIS IS FOR THE GALLERY SECTION*/
   .gallery{
     /* border: solid crimson; */
-    max-height: 200px;
+    max-height: 220px;
     overflow: scroll;
     margin-top: 5px;
   }
@@ -704,7 +711,7 @@ footer {
   .gallery_show{
     width: 1000px;
     height: 150px;
-    margin-left: 0px;
+    margin: 0px;
     /* border: solid salmon; */
   }
   .gallery_show img{
@@ -877,8 +884,31 @@ footer {
     font-size: 17px;
   }
   .testimonials > h2{
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   padding-bottom: 20px;
-
+  /* border: solid green; */
+  }
+  #footer_text p{
+    border: solid red;
+    font-size: 17px;
+  }
 }
+
+@media(max-width: 1280px) and (orientation: landscape){
+  .welcome-text p{
+    /* border: solid red; */
+    font-size: 26px;
+  }
+  #gallery-header{
+    /* border: solid red; */
+    margin-top: 220px;
+  }
+  .gallery-container{
+    /* border: solid red; */
+    margin-top: 5px;
+  }
+  .map-section p{
+    border: solid red;
+    font-size: 43px;
+  }
 }
