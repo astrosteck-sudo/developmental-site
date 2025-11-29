@@ -91,7 +91,7 @@ third_slide.addEventListener("click", () => {
         third_image_description.textContent = "Mountain Afajato";
 
         fourth_pic.src = "Kalakpa-Game-Production-Reserve.jpg";
-        fourth_image_description.textContent = "Kalakpa Game Production";
+        fourth_image_description.textContent = "Kalakpa Game Reserve";
 
         [first_pic, second_pic, third_pic, fourth_pic].forEach(pic => pic.style.opacity = 1);
     }, 400);
@@ -117,6 +117,25 @@ const sets = [
     { src: "AF1QipM0FYBK-yC2GDx4mY0oP1UM9kPjRX6B1UJnn21ns680-w680-h510.jpg", desc: "Golden Beaches" }
   ]
 ];
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
+
+  question.addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
+});
+
+
+const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("mobileNav");
+
+  hamburger.addEventListener("click", () => {
+    mobileNav.classList.toggle("open");
+  });
+
 // ============ MOBILE LOGIC ============ //
 if (window.innerWidth <= 768) {
   const galleryContainer =
@@ -154,7 +173,7 @@ if (window.innerWidth <= 768) {
       text.style.fontSize = "20px";
       text.style.color = "gold";
       text.style.marginTop = "6px";
-      text.style.textShadow= "2px 2px 8px rgba(1, 1, 1, 0.27)";
+      text.style.textShadow= "2px 2px 8px rgba(1, 1, 1, 0.16)";
       text.style.fontWeight = "bold"
       // append both
       wrapper.appendChild(img);
