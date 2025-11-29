@@ -34,8 +34,29 @@
     <link rel="android-chrome-512x512.png" sizes="180x180" href="android-chrome-512x512.png">
 </head>
 <body>
-    
-    <div class="slider">
+    <header  class="hamburger-section">
+        <img id="logo_pic" src="explore_volta_pic.jpeg">
+        <div  class="logo">Volta Tourism</div>
+
+        <!-- Hamburger button -->
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="#slider_part">Home</a>
+            <a href="#welcome_part">Welcome</a>
+            <a href="#about_part">About</a>
+            <a href="#gallery_part">Gallery</a>
+            <a href="#plan_your_visit_part">Plan Your Visit</a>
+            <a href="#map_part">Map</a>
+            <a href="#testimonials_part">Testimonials</a>
+            <a href="#faq_part">FAQ</a>
+            <a href="#contact_part">Contact</a>
+        </nav>
+    </header>
+    <div id="slider_part" class="slider">
         <div class="slides">
             <img class="slide" src="pexels-truongbanreview-2847894.jpg">
             <img class="slide" src="pexels-jm-dequina-111050-342861.jpg">
@@ -49,7 +70,7 @@
         </div>
     </div>
     <!-- Section: Person with Sign (Below the slideShow)-->
-    <section class="welcome">
+    <section id="welcome_part" class="welcome">
         <div class="welcome-image">
             <img src="micheal_suka.jpeg">                           
         </div>
@@ -59,7 +80,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about_part" class="about">
         <p>We showcase the most beautiful tourist destinations in the Volta Region</p>
         <div class="about-details">
             <div>
@@ -82,7 +103,7 @@
 
     <!--Gallery Section-->
     <h2 id="gallery-header">Gallery</h2>
-    <section class="gallery">
+    <section id="gallery_part" class="gallery">
         
         <div class="gallery-container">
             <div class="gallery_show">
@@ -117,7 +138,7 @@
         </div>
     </section>
 
-    <section id="plan-your-visit" class="visit-section">
+    <section id="plan_your_visit_part" class="visit-section">
     <h2>Plan Your Visit</h2>
     <p class="visit-intro">
         Make your journey to the Volta Region smooth and unforgettable.  
@@ -170,7 +191,7 @@
 </section>    
 
     <section id="map-title"><h1>DISCOVER</h3></section>
-    <section class="map-section">
+    <section id="map_part" class="map-section">
         <p>
             Discover the breathtaking beauty and cultural richness of Ghana’s Volta Region through this interactive map. 
             <span id="explore">Explore</span> waterfalls, mountains, and historic sites that define the region’s natural charm and deep heritage.<br> 
@@ -182,57 +203,184 @@
     </section>
     
 
-    <section class="testimonials">
-    <h2>What Travelers Say</h2>
-    <div class="testimonial-container">
-    <div class="testimonial">
-        <img src="testiminial_1.jpg">
-      <p>“Visiting the Volta Region was the best decision I made in Ghana. The landscapes were stunning and the people were incredibly welcoming. I felt at home the entire trip.”  </p>
-      <h4>- Ama Boateng</h4>
-    </div>
-    <div class="testimonial">
-        <img src="testimonial_2.jpg">
-      <p>“The hiking trails, waterfalls, and calm villages were beyond beautiful. Wli Falls and Mount Afadja gave me memories I’ll never forget. I’m definitely coming back.” </p>
-      <h4>- Kwesi Mensah</h4>
-    </div>
-    <div class="testimonial">
-        <img src="testimonial_3.jpg">
-      <p>“The cultural experience was extraordinary. Watching the Kente weaving and joining the local festivals opened my eyes to the beauty of Ewe tradition.”  </p>
-      <h4>- Kwesi Mensah</h4>
-    </div>
-    <div class="testimonial">
-        <img src="testimnial_5.jpg">
-      <p>“I loved every moment of my visit. The food, the music, the scenery — everything felt peaceful and refreshing. The Volta Region is Ghana’s hidden treasure.”  </p>
-      <h4>- Kwesi Mensah</h4>
-    </div>
-    <div class="testimonial">
-     <img src="testimonial_6.jpg">
-      <p>“As a nature lover, the Volta Region is paradise. The greenery, the wildlife, and the quiet environment make it the perfect escape from the city.”  </p>
-      <h4>- Kwesi Mensah</h4>
-    </div>
-    <div class="testimonial">
-      <img src="testimonial_9.jpg">
-      <p>“Our family trip to the Volta Region was unforgettable. The children enjoyed the waterfalls and boat rides, while we enjoyed the calm atmosphere and friendly people.”  </p>
-      <h4>- Kwesi Mensah</h4>
-    </div>
-  </div>
-</section>
+    <section id="testimonials_part" class="testimonials">
+        <h2>What Travelers Say</h2>
+        <div class="testimonial-container">
+        <div class="testimonial">
+            <img src="testiminial_1.jpg">
+        <p>“Visiting the Volta Region was the best decision I made in Ghana. The landscapes were stunning and the people were incredibly welcoming. I felt at home the entire trip.”  </p>
+        <h4>- Ama Boateng</h4>
+        </div>
+        <div class="testimonial">
+            <img src="testimonial_2.jpg">
+        <p>“The hiking trails, waterfalls, and calm villages were beyond beautiful. Wli Falls and Mount Afadja gave me memories I’ll never forget. I’m definitely coming back.” </p>
+        <h4>- Kwesi Mensah</h4>
+        </div>
+        <div class="testimonial">
+            <img src="testimonial_3.jpg">
+        <p>“The cultural experience was extraordinary. Watching the Kente weaving and joining the local festivals opened my eyes to the beauty of Ewe tradition.”  </p>
+        <h4>- Kwesi Mensah</h4>
+        </div>
+        <div class="testimonial">
+            <img src="testimnial_5.jpg">
+        <p>“I loved every moment of my visit. The food, the music, the scenery — everything felt peaceful and refreshing. The Volta Region is Ghana’s hidden treasure.”  </p>
+        <h4>- Kwesi Mensah</h4>
+        </div>
+        <div class="testimonial">
+        <img src="testimonial_6.jpg">
+        <p>“As a nature lover, the Volta Region is paradise. The greenery, the wildlife, and the quiet environment make it the perfect escape from the city.”  </p>
+        <h4>- Kwesi Mensah</h4>
+        </div>
+        <div class="testimonial">
+        <img src="testimonial_9.jpg">
+        <p>“Our family trip to the Volta Region was unforgettable. The children enjoyed the waterfalls and boat rides, while we enjoyed the calm atmosphere and friendly people.”  </p>
+        <h4>- Kwesi Mensah</h4>
+        </div>
+        </div>
+    </section>
+<section class="faq-section" id="faq_part">
+    <h2>FAQ</h2>
 
+    <div class="faq-item">
+        <button class="faq-question">How do I get to the Volta Region from Accra?</button>
+        <div class="faq-answer">
+            <p>You can travel by bus, minibus (“trotro”), or private car. Major departure points include Tudu, Madina, Accra Mall VIP Station, and Ho Station. The trip takes 3–4 hours depending on traffic.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Do I need a travel permit to enter the region?</button>
+        <div class="faq-answer">
+            <p>No. The Volta Region is open to all travelers and requires no special permits.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">What is the best time to visit?</button>
+        <div class="faq-answer">
+            <p>The best months are November to March for cool weather and April to August for powerful waterfalls.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Is the Volta Region safe for tourists?</button>
+        <div class="faq-answer">
+            <p>Yes. It’s peaceful and friendly. Just follow standard travel safety practices.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">What are the top attractions?</button>
+        <div class="faq-answer">
+            <p>
+                Popular attractions include Wli Waterfall, Mount Afadjato, Amedzofe, Tafi Atome Monkey Sanctuary, Fort Prinzenstein, Kalakpa Reserve, Keta Lagoon, and Volta Lake.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Are there entry fees for attractions?</button>
+        <div class="faq-answer">
+            <p>Yes. Most attractions charge small fees to support community development. Rates vary for locals, students, and foreigners.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Do I need a tour guide?</button>
+        <div class="faq-answer">
+            <p>Some attractions require guides for safety, including Wli Waterfalls and Afadjato. Even where optional, guides enhance the experience. But during our trips our personal guides will be used.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Where can I stay?</button>
+        <div class="faq-answer">
+            <p>The region has hotels, lodges, and guesthouses in Ho, Hohoe, Keta, Kpando, Afadjato South, and Amedzofe.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Are festivals open to visitors?</button>
+        <div class="faq-answer">
+            <p>Yes! Festivals like Hogbetsotso and Asogli Yam Festival welcome tourists and offer dance, drumming, and cultural displays.</p>
+        </div>
+    </div>
+</section>
     <!-- python -m http.server 8000 --bind 0.0.0.0 192.168.161.228 -->
 
     <!--Contacts Section-->
-    <section class="contacts">
+    <!-- <section class="contacts">
         <h2>Contact Us</h2>
         <p id="email"><i class="fa-solid fa-square-envelope"></i>Email:<a href="mailto:paulfoli122@gmail.com?subject=Hello%20from%20your%20website&body=Hi,%20I%20saw%20your%20website%20and%20wanted%20to%20reach%20out.">paulfoli122@gmail.com</a></p>
         <p><i class="fa-solid fa-phone"></i>Phone: 0535448065</p>
-        <p><i class="fa-brands fa-facebook"></i>Facebook<a href="https://www.facebook.com/mndcateringservices17?mibextid=rS40aB7S9Ucbxw6v">: Visit Ghana</a></p>
-        <p><i class="fa-brands fa-tiktok"></i>Tiktok<a href="https://www.tiktok.com/@explore.with.md?_t=ZN-90k97Du1w4U&_r=1">Visit Ghana</a></p>
+        <p><i class="fa-brands fa-facebook"></i>Facebook:<a href="https://www.facebook.com/mndcateringservices17?mibextid=rS40aB7S9Ucbxw6v">Visit Ghana</a></p>
+        <p><i class="fa-brands fa-tiktok"></i>Tiktok:<a href="https://www.tiktok.com/@explore.with.md?_t=ZN-90k97Du1w4U&_r=1">Visit Ghana</a></p>
     </section>
 
     
     <footer id="footer_text">
         <p>© 2025 Explore Volta. All rights reserved.</p>
-    </footer>
+    </footer> -->
+
+    <footer id="contact_part" class="main-footer">
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-box">
+            <h3>About Volta Tourism</h3>
+            <p id="about-tourism-text">
+                Discover the beauty, culture, and vibrant experiences of the Volta Region. 
+                Our mission is to guide travelers through waterfalls, mountains, culture, 
+                and unforgettable adventures across the region.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#gallery_part">Gallery</a></li>
+                <li><a href="#plan-your-visit">Plan Your Visit</a></li>
+                <li><a href="#map_part">Interactive Map</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p id="email"><i class="fa-solid fa-square-envelope"></i>Email:<a href="mailto:paulfoli122@gmail.com?subject=Hello%20from%20your%20website&body=Hi,%20I%20saw%20your%20website%20and%20wanted%20to%20reach%20out.">paulfoli122@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i>Phone: 0535448065</p>
+            <p>Location: Volta Region, Ghana</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-box">
+            <h3 id="footer-social-header">Follow Us</h3>
+            <div class="footer-socials">
+                <!-- <a src="follow_icons/facebook.png" class="social-icon">📘</a> -->
+                 <a class="social-icon" href="https://www.facebook.com/mndcateringservices17?mibextid=rS40aB7S9Ucbxw6v">
+                    <img src="facebook.png">
+                 </a>
+                 <a class="social-icon" href="">
+                    <img src="instagram.png">
+                 </a>
+                 <a class="social-icon" href="https://www.facebook.com/mndcateringservices17?mibextid=rS40aB7S9Ucbxw6v">
+                    <img src="tiktok.png">
+                 </a>
+                <a class="social-icon" href="">
+                    <img id="twitter" src="twitter.png">
+                 </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Volta Regional Tourism Guide  All Rights Reserved.</p>
+    </div>
+</footer>
     
     
     <script src="development.js"></script>
