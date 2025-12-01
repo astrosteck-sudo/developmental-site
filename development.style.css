@@ -58,6 +58,10 @@ header{
   height: 0px;
   overflow: hidden;
 }
+/* .hamburger-section img{
+  border: solid green;
+  width: 60px;
+} */
 
 .slider{
     position: relative;
@@ -160,7 +164,7 @@ img.displaySlide{
   /* text-shadow: #2fe70a 1px 1px; */
   /* border: solid red; */
   padding-top: 0px;
-  font-family: Michroma;
+  /* font-family: Michroma; */
 }
 
 /* 👇 THIS IS THE ABOUT SECTION */
@@ -204,7 +208,7 @@ img.displaySlide{
 .about-details p{
   color: #666;
   text-align: left;
-  font-family: Michroma;
+  /* font-family: Michroma; */
   font-size: 2.6rem;
 }
 
@@ -624,7 +628,7 @@ footer {
 }
 #map-title{
   color: gold;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.3);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2);
 }
 #map-title{
   font-size: 2rem;
@@ -664,6 +668,78 @@ footer {
 .map-section p:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+/* ---------- FESTIVAL SECTION ---------- */
+.festivals {
+    padding: 80px 10%;
+    background: #fff;
+    text-align: center;
+    /* border: solid red; */
+}
+
+.festivals h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: gold;
+    text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
+    /* border: solid blue; */
+}
+
+.fest-intro {
+    max-width: 1600px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    /* border: solid green; */
+}
+
+/* Grid of cards */
+.festival-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    /* border: solid rgb(9, 9, 2); */
+}
+
+.festival-card {
+    background: #f7f7f7;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    /* border: solid rgb(247, 0, 255); */
+}
+
+.festival-card:hover {
+    transform: translateY(-5px);
+}
+
+.festival-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /* border: solid rgb(222, 208, 18); */
+}
+
+.festival-card h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.festival-card .month {
+    display: block;
+    margin-bottom: 10px;
+    color: #009688;
+    font-weight: bold;
+}
+
+.festival-card p {
+    font-size: 1rem;
+    padding: 0 15px;
+    color: #444;
 }
 
 
@@ -1219,8 +1295,8 @@ footer {
     padding: 20px;
     transition: right 0.3s ease;
     box-shadow: -2px 0 10px rgba(0,0,0,0.25);
-    
-    border: solid red;
+    overflow: scroll;
+    /* border: solid red; */
   }
 
   .mobile-nav a {
