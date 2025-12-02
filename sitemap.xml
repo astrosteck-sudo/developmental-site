@@ -1,38 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Homepage -->
   <url>
     <loc>https://astrosteck-sudo.github.io/developmental-site/</loc>
     <priority>1.0</priority>
   </url>
 
+  <!-- Slider / Hero -->
   <url>
-    <loc>https://astrosteck-sudo.github.io/developmental-site/about</loc>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#slider_part</loc>
     <priority>0.9</priority>
   </url>
 
+  <!-- Welcome -->
   <url>
-    <loc>https://astrosteck-sudo.github.io/developmental-site/gallery</loc>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#welcome_part</loc>
     <priority>0.8</priority>
   </url>
 
+  <!-- About -->
   <url>
-    <loc>https://astrosteck-sudo.github.io/developmental-site/plan-your-visit</loc>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#about_part</loc>
     <priority>0.8</priority>
   </url>
 
+  <!-- Gallery -->
   <url>
-    <loc>https://astrosteck-sudo.github.io/developmental-site/festivals</loc>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#gallery_part</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Plan Your Visit -->
+  <url>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#plan_your_visit_part</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Map -->
+  <url>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#map_part</loc>
     <priority>0.7</priority>
   </url>
 
+  <!-- Festivals -->
   <url>
-    <loc>https://astrosteck-sudo.github.io/developmental-site/map</loc>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#festival_part</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Other Activities -->
+  <url>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#other_activities_part</loc>
     <priority>0.7</priority>
   </url>
 
+  <!-- Testimonials -->
   <url>
-    <loc>https://astrosteck-sudo.github.io/developmental-site/contact</loc>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#testimonials_part</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#faq_part</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://astrosteck-sudo.github.io/developmental-site/#contact_part</loc>
     <priority>0.6</priority>
   </url>
 
