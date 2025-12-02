@@ -1,4 +1,17 @@
+# robots.txt for Explore Volta Tourism Website
+
 User-agent: *
 Allow: /
 
+# Block technical assets from being indexed
+Disallow: /development.style.css
+Disallow: /development.js
+Disallow: /favicon/
+Disallow: /slide_pictures/
+Disallow: /gallery_imges/
+Disallow: /festivals_pictures/
+Disallow: /other_activities_pictures/
+Disallow: /follow_icons/
+
+# Sitemap location
 Sitemap: https://astrosteck-sudo.github.io/developmental-site/sitemap.xml
