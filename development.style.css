@@ -52,26 +52,37 @@ body {
   color: white; /* optional, to make text readable */
   overflow-x: hidden;
 }
+@font-face{
+  font-family: "haerins";
+  src: url(Haerins.otf);
+  font-weight: normal;
+  font-style: normal;
+}
 .logo{
-  display: none;
+  /* border: solid red; */
+  float: left;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 39px;
+  color: gold;
+  font-family: haerins;
+}
+#volta-text{
+  background: url(pexels-jm-dequina-111050-342861.jpg) no-repeat center;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: haerins;
 }
 header{
   /* border: solid red; */
   width: 100vw;
   height: 70px;
   overflow: hidden;
-  background-color: rgb(155, 179, 155);
+  background-color: #f7f7f7;
   /* top: 0; */
   z-index: 2000;
   position: fixed;
-}
-.hamburger-section img{
-  /* border: solid green; */
-  width: 90px;
-  float: left;
-  margin-left: 20px;
-  height: 60px;
-  margin-top: 5px;
 }
 .hamburger{
   /* border: solid blue; */
@@ -81,18 +92,20 @@ header{
   /* border: solid green; */
   float: left;
   width: 1200px;
-  margin-left: 50px;
+  margin-left: 13px;
   gap: 50px;
   height: 5vh;
   margin-top: 15px;
 }
 .mobile-nav span{
   /* border: solid pink; */
-  font-size: 25px;
+  font-size: 23px;
   width: 10px;
   margin-right: 14px;
   color: gold;
-  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2);
+  /* text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2); */
+  font-weight: bolder;
+  /* font-family: Anton; */
 }
 .mobile-nav a{
   text-decoration: none;
@@ -851,6 +864,12 @@ footer {
   .mobile-nav{
     width: 650px;
   }
+  
+  
+
+
+
+
   .slider-content h1{
     font-size: 3.5rem;
   }
@@ -950,20 +969,87 @@ footer {
 
 @media (max-width: 1080px) and (orientation: landscape){
   header{
-    height: 90px;
+    height: 70px;
     /* border: solid red; */
     position: fixed;
   }
-  .hamburger-section img{
-    margin-top: 16px;
-  }
-  .mobile-nav{
-    width: 910px;
+  
+  /* .mobile-nav{
+    width: 740px;
     text-align: center;
+    border: solid red;
+  } */
+  /* .mobile-nav span{
+    font-size: 30px;
+  } */
+
+  .logo{
+    /* border: solid rgb(0, 38, 255); */
+    color: #666;
+    font-weight: bolder;
+    width: 400px;
+    font-size: 28px;
+    display: block;
+    font-weight: bold;
+    color: gold;
+  }
+  #volta-text{
+    background: url(pexels-jm-dequina-111050-342861.jpg) no-repeat center;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .hamburger {
+    font-size: 30px;
+    border: none;
+    color: rgb(16, 16, 0);
+    display: block;
+    border: solid red;
+    margin-left: 900px;
+    margin-top: 20px;
+  }
+
+  /* --- MOBILE NAV --- */
+  .mobile-nav {
+    position: fixed;
+    top: 60px;
+    right: -2060px;
+    width: 220px;
+    background-color: #f7f7f7;
+    height: 44.6vh;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px; */
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.25);
+    overflow: scroll;
+    /* border: solid red; */
+    text-align: left;
+    gap: 20px;
   }
   .mobile-nav span{
-    font-size: 30px;
+    /* border: solid red; */
+    font-size: 20px;
+    width: 100px;
+    margin-left: 10px;
   }
+  .mobile-nav a{
+    /* border: solid green; */
+    width: 200px;
+    height: 0px;
+  }
+
+  .mobile-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #444;
+    padding: 12px 0;
+    /* border-bottom: 1px solid #ddd; */
+  }
+
+  /* .mobile-nav a:last-child {
+    border-bottom: none;
+  } */
+
   .slider{
     /* border: solid blue; */
     height: 724px;
@@ -1044,17 +1130,94 @@ footer {
 }
 @media (max-width: 1024px){
     header{
-    height: 80px;
+    height: 70px;
     position: fixed;
   }
-  .hamburger-section img{
-    width: 90px;
-    margin-left: 20px;
+  .logo{
+    margin-top: 20px;
   }
-  .mobile-nav{
-    width: 680px;
-    margin-left: 5px;
+  /* .mobile-nav{
+    width: 480px;
+    margin-left: 50px;
     text-align: center;
+    border: solid rgb(0, 0, 0);
+  } */
+/* mobile-nav a, mobile-nav span, mobile-nav,  hamburger, logo */
+
+.logo{
+    /* border: solid rgb(0, 38, 255); */
+    color: #666;
+    font-weight: bolder;
+    width: 400px;
+    font-size: 28px;
+    display: block;
+    font-weight: bold;
+    /* color: blue; */
+    color: gold;
+  }
+  #volta-text{
+    background: url(pexels-jm-dequina-111050-342861.jpg) no-repeat center;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    display: none; /* hidden on desktop */
+    border: none;
+    color: rgb(16, 16, 2);
+    /* border: solid red; */
+    margin-top: 15px;
+    display: block;
+    margin-left: 700px;
+  }
+
+  /* --- MOBILE NAV --- */
+  .mobile-nav {
+    position: fixed;
+    top: 60px;
+    right: -260px;
+    width: 220px;
+    background-color: #f7f7f7;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px; */
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.25);
+    overflow: scroll;
+    /* border: solid red; */
+    text-align: left;
+    gap: 20px;
+  }
+  .mobile-nav span{
+    /* border: solid red; */
+    font-size: 20px;
+    width: 100px;
+    margin-left: 10px;
+  }
+  .mobile-nav a{
+    /* border: solid green; */
+    width: 200px;
+    height: 0px;
+  }
+
+  .mobile-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #444;
+    padding: 12px 0;
+    /* border-bottom: 1px solid #ddd; */
+  }
+
+  .mobile-nav a:last-child {
+    border-bottom: none;
+  }
+
+  /* --- SHOW MENU WHEN ACTIVE --- */
+  .mobile-nav.open {
+    right: 0;
   }
   .slides{
     /* border: solid green; */
@@ -1423,29 +1586,30 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(171, 185, 171);
+    background-color: #f7f7f7;
     position: fixed;
     top: 0;
     z-index: 2000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height: 70px;
     /* border: solid red; */
+    padding-left: 0px;
   }
 
   /* Hide regular desktop nav (you can replace with yours) */
 
   /* --- HAMBURGER BUTTON --- */
-  #logo_pic{
-    /* border: solid red; */
-    width: 50px;
-  }
   .logo{
     /* border: solid rgb(0, 38, 255); */
     color: #666;
     font-weight: bolder;
     width: 400px;
-    font-size: 25px;
+    font-size: 28px;
     display: block;
+    font-weight: bold;
+    color: gold;
+    /* border: solid blue; */
+    margin-left: 5%;
   }
   .hamburger {
     font-size: 30px;
@@ -1453,7 +1617,7 @@ footer {
     user-select: none;
     display: none; /* hidden on desktop */
     border: none;
-    color: rgb(251, 255, 0);
+    color: rgb(247, 251, 6);
   }
 
   /* --- MOBILE NAV --- */
@@ -1462,7 +1626,7 @@ footer {
     top: 60px;
     right: -260px;
     width: 220px;
-    background: rgb(171, 185, 171);
+    background-color: #f7f7f7;
     height: 44.6vh;
     display: flex;
     flex-direction: column;
@@ -1506,7 +1670,10 @@ footer {
   /* --- MOBILE ONLY --- */
   @media (max-width: 768px) {
     .hamburger {
-      display: block;
+      display: inline-block;
+      /* border: solid red; */
+      margin-left: 0px;
+      color: black;
     }
   }
 
