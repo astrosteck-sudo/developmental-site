@@ -52,17 +52,54 @@ body {
   color: white; /* optional, to make text readable */
   overflow-x: hidden;
 }
+.logo{
+  display: none;
+}
 header{
   /* border: solid red; */
-  width: 0px;
-  height: 0px;
+  width: 100vw;
+  height: 70px;
   overflow: hidden;
+  background-color: rgb(155, 179, 155);
+  /* top: 0; */
+  z-index: 2000;
+  position: fixed;
 }
-/* .hamburger-section img{
-  border: solid green;
-  width: 60px;
-} */
-
+.hamburger-section img{
+  /* border: solid green; */
+  width: 90px;
+  float: left;
+  margin-left: 20px;
+  height: 60px;
+  margin-top: 5px;
+}
+.hamburger{
+  /* border: solid blue; */
+  display: none;
+}
+.mobile-nav{
+  /* border: solid green; */
+  float: left;
+  width: 1200px;
+  margin-left: 50px;
+  gap: 50px;
+  height: 5vh;
+  margin-top: 15px;
+}
+.mobile-nav span{
+  /* border: solid pink; */
+  font-size: 25px;
+  width: 10px;
+  margin-right: 14px;
+  color: gold;
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2);
+}
+.mobile-nav a{
+  text-decoration: none;
+}
+.mobile-nav span:hover{
+  color: rgb(110, 96, 13);
+}
 .slider{
     position: relative;
     width: 100vw;
@@ -164,7 +201,7 @@ img.displaySlide{
   /* text-shadow: #2fe70a 1px 1px; */
   /* border: solid red; */
   padding-top: 0px;
-  /* font-family: Michroma; */
+  font-family: Michroma;
 }
 
 /* 👇 THIS IS THE ABOUT SECTION */
@@ -188,7 +225,8 @@ img.displaySlide{
   color: gold;
   text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.1);
   font-size: 2.5rem;
-  /* font-weight: bold; */
+  font-family: Playwrite AU TAS;
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2);
 }
 .about-details{
   justify-content: center;
@@ -208,8 +246,8 @@ img.displaySlide{
 .about-details p{
   color: #666;
   text-align: left;
-  /* font-family: Michroma; */
-  font-size: 2.6rem;
+  font-family: Michroma;
+  font-size: 2.2rem;
 }
 
 
@@ -225,7 +263,7 @@ img.displaySlide{
 }
 #gallery-header{
   color: gold;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   font-weight: bolder;
   background-attachment: fixed;
@@ -288,7 +326,7 @@ img.displaySlide{
 }
 
 .visit-section h2 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     margin-bottom: 15px;
     color: gold;
     text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
@@ -532,7 +570,7 @@ footer {
 .footer-box h3 {
     margin-bottom: 15px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .footer-box p {
@@ -627,12 +665,10 @@ footer {
   height: 600px;
 }
 #map-title{
+  text-align: center;
+  font-size: 1.5rem;
   color: gold;
   text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.2);
-}
-#map-title{
-  font-size: 2rem;
-  text-align: center;
   /* border: solid forestgreen; */
 }
 .map-section > p{
@@ -645,7 +681,7 @@ footer {
   color: #666;
   /* text-shadow: #2fe70a 1px 1px; */
   /* box-shadow: 0 14px 16px rgba(0,0,0,0.15); */
-  transition: ease 3s;
+  /* transition: ease 3s; */
   font-family: Michroma;
 }
 .map{
@@ -678,7 +714,7 @@ footer {
 }
 
 .festivals h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 15px;
     color: gold;
     text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
@@ -742,6 +778,46 @@ footer {
     color: #444;
 }
 
+/*THIS IS THE OTHER SECTION*/
+.Other_activities > h3{
+  /* border: solid brown; */
+  color: gold;
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
+  text-align: center;
+  font-size: 3rem;
+}
+
+.other_activities_container{
+  /* border: solid blue; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding-left: 25px;
+}
+
+.other_activities_container h3{
+  color: rgb(13, 13, 12);
+  text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
+  text-align: center;
+}
+
+.other_activities_card{
+  /* border: solid green; */
+  transition: transform 0.3s ease;
+  padding-left: 30px;
+}
+.other_activities_card img{
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.other_activities_card:hover{
+  transform: translateY(-5px);
+}
+.other_activities_card img:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 
 
 @keyframes fade {
@@ -766,6 +842,15 @@ footer {
 /*THIS IS FOR WHEN THE MOBILE PHONE HAS BEEN SWITCHED TO LANDSCEPE MODE*/
 @media (max-width: 812px) and (orientation: landscape)
 {
+  header{
+    height: 90px;
+  }
+  .hamburger-section img{
+    margin-top: 15px;
+  }
+  .mobile-nav{
+    width: 650px;
+  }
   .slider-content h1{
     font-size: 3.5rem;
   }
@@ -796,14 +881,14 @@ footer {
     
   }
   .welcome-text {
-    /* border: solid rgb(47, 0, 255); */
+    border: solid rgb(47, 0, 255);
     padding-top: 30px;
-    max-height: 540px;
+    max-height: 570px;
   }
   .welcome-text p{
-    /* border: solid green; */
+    border: solid green;
     padding-top: 0px;
-    font-size: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   /*THIS IS THE ABOUT SECTION*/
@@ -841,6 +926,10 @@ footer {
     font-size: 1rem;
   }
   /*THIS IS FOR THE MAP SECTION*/
+  #map-title{
+    /* border: solid red; */
+    font-size: 1.5rem;
+  }
   .map-section p{
     font-size: 30px;
   }
@@ -860,6 +949,21 @@ footer {
 }
 
 @media (max-width: 1080px) and (orientation: landscape){
+  header{
+    height: 90px;
+    /* border: solid red; */
+    position: fixed;
+  }
+  .hamburger-section img{
+    margin-top: 16px;
+  }
+  .mobile-nav{
+    width: 910px;
+    text-align: center;
+  }
+  .mobile-nav span{
+    font-size: 30px;
+  }
   .slider{
     /* border: solid blue; */
     height: 724px;
@@ -909,16 +1013,49 @@ footer {
     margin: 0px;
   }
   .map-section p{
-    border: solid red;
+    /* border: solid red; */
     font-size: 42px;
     padding-left: 10px;
+  }
+  .map-section >p{
+    padding-top: 100px;
+    /* border: solid green; */
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
   }
   #about-tourism-text{
   /* border: solid red; */
   width: 200px;
-}
+  }
+
+  .footer-container{
+    /* border: solid red; */
+    width: 100vw;
+
+  }
+  /* .footer-box{
+    border: solid blue;
+  } */
+  .footer-socials{
+    /* border: solid green; */
+    width: 300px;
+    padding-left: 20px;
+  }
 }
 @media (max-width: 1024px){
+    header{
+    height: 80px;
+    position: fixed;
+  }
+  .hamburger-section img{
+    width: 90px;
+    margin-left: 20px;
+  }
+  .mobile-nav{
+    width: 680px;
+    margin-left: 5px;
+    text-align: center;
+  }
   .slides{
     /* border: solid green; */
     height: 100vh;
@@ -998,20 +1135,20 @@ footer {
     text-align: left;
     padding-left: 90px;
   }
-  .footer-socials{
-    /* border: solid green; */
-    padding-left: 0px;
-    
-  }
   .footer-container {
-    width: 90%;
+    width: 100vw;
     max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding-bottom: 30px;
-}
+  }
+  .footer-socials{
+    /* border: solid green; */
+    width: 300px;
+    padding-left: 20px;
+  }
 
 
 }
@@ -1072,11 +1209,12 @@ footer {
   /*THIS IS FOR THE ABOUT SECTION*/
   .about{
     /* border: solid rgb(180, 250, 17); */
-    height: 560px;
+    height: 460px;
   }
   .about > p{
     /* border: solid red; */
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bolder;
 
   }
   .about-details{
@@ -1085,10 +1223,18 @@ footer {
   }
   .about-details p{
     font-size: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    background: white;
-    border-radius: 2px 20px;
-    padding-left: 10px;
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.05); */
+    /* background: white; */
+    /* border-radius: 2px 20px;
+    padding-left: 10px; */
+    font-size: 15px;
+    line-height: 1.9;
+    color: #666;
+    /* text-align: right; */
+    /* text-shadow: #2fe70a 1px 1px; */
+    /* border: solid red; */
+    padding-top: 0px;
+    font-family: Michroma;
   }
 
   /*THIS IS FOR THE GALLERY SECTION*/
@@ -1119,6 +1265,8 @@ footer {
     }
   #gallery-header{
     margin-top: 0px;
+    /* border: solid red; */
+    font-size: 2rem;
   }
   .gallery img{
     /* border: solid rgb(243, 243, 4); */
@@ -1182,6 +1330,20 @@ footer {
   acts p{
     font-size: 20px;
   }
+  .festivals > h2{
+    /* border: solid red; */
+    font-size: 1.5rem;
+  }
+  .Other_activities > h3{
+    /* border: solid red; */
+    font-size: 2rem;
+  }
+  .Other_activities h3{
+    /* border: solid red; */
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
+    font-weight: bold;
+  }
   .faq-answer p {
   padding: 15px 0;
   color: #444;
@@ -1207,43 +1369,53 @@ footer {
     margin-left: 0px;
     font-size: 17px;
   }
-  #footer_text{
-    font-size: 17px;
-  }
   .testimonials > h2{
   font-size: 2.1rem;
   padding-bottom: 20px;
   /* border: solid green; */
   }
+
+
   /* ===== FOOTER ===== */
-  .main-footer {
-      background: #111;
-      color: #ddd;
-      padding-top: 40px;
-      margin-top: 40px;
-      font-family: Arial, sans-serif;
-      /* border: solid rgb(23, 235, 12); */
-      overflow: scroll;
-    }
-    #about-tourism-text{
-      /* border: solid green; */
-      margin-left: 40px;
-    }
-    .footer-container{
-      /* border: solid rgb(51, 0, 255); */
-      display: flex;
-      flex-direction: column;
-      height: 740px;
-    }
-    .footer-socials{
-      /* border: solid red; */
-      width: 240px;
-      padding-left: 45px;
-    }
-    .footer-bottom p{
-      /* border: solid red; */
-      font-size: 16px;
-    }
+  footer{
+    /* border: solid red; */
+    width: 100vw;
+    padding-left: 0px;
+  }
+  .footer-container{
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+  #about-tourism-text{
+    /* border: solid pink; */
+    margin-left: 80px;
+  }
+  .footer-box{
+    /* border: solid green; */
+    padding-left: 0px;
+  }
+  .footer-box h3{
+    /* border: solid violet; */
+    font-size: 1.3rem;
+  }
+  #footer-social-header{
+    padding-left: 135px;
+  }
+  .footer-socials{
+    margin-left: 30px;
+    /* border: solid forestgreen; */
+  }
+  .footer-bottom{
+    /* border: solid red; */
+    margin-top: 20px;
+    width: 100vw;
+  }
+  .footer-bottom p{
+    font-size: 20px;
+  }
+
     /* --- NAVBAR BASE --- */
   header {
     width: 100%;
@@ -1257,6 +1429,7 @@ footer {
     z-index: 2000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height: 70px;
+    /* border: solid red; */
   }
 
   /* Hide regular desktop nav (you can replace with yours) */
@@ -1272,13 +1445,14 @@ footer {
     font-weight: bolder;
     width: 400px;
     font-size: 25px;
+    display: block;
   }
   .hamburger {
     font-size: 30px;
     cursor: pointer;
     user-select: none;
     display: none; /* hidden on desktop */
-    /* border: solid rgb(255, 242, 0); */
+    border: none;
     color: rgb(251, 255, 0);
   }
 
@@ -1289,14 +1463,27 @@ footer {
     right: -260px;
     width: 220px;
     background: rgb(171, 185, 171);
-    height: 54vh;
+    height: 44.6vh;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    /* padding: 0px; */
     transition: right 0.3s ease;
     box-shadow: -2px 0 10px rgba(0,0,0,0.25);
     overflow: scroll;
     /* border: solid red; */
+    text-align: left;
+    gap: 20px;
+  }
+  .mobile-nav span{
+    /* border: solid red; */
+    font-size: 20px;
+    width: 100px;
+    margin-left: 10px;
+  }
+  .mobile-nav a{
+    /* border: solid green; */
+    width: 200px;
+    height: 0px;
   }
 
   .mobile-nav a {
@@ -1304,7 +1491,7 @@ footer {
     font-size: 18px;
     color: #444;
     padding: 12px 0;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
   }
 
   .mobile-nav a:last-child {
@@ -1322,6 +1509,8 @@ footer {
       display: block;
     }
   }
+
+
   
 }
 
@@ -1344,3 +1533,5 @@ footer {
   }
   
 }
+
+
