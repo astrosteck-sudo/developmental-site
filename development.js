@@ -99,7 +99,7 @@ third_slide.addEventListener("click", () => {
 
 const sets = [
   [
-    { src: "Kyabobo-National-Park-Head-Quaters-And-Entrance-Nkwanta-Ghana-TortoisePathcom-11-1024x684.webp", desc: "Kyabobo National Park Entrance" },
+    { src: "Kyabobo-National-Park-Head-Quaters-And-Entrance-Nkwanta-Ghana-TortoisePathcom-11-1024x684.webp", desc: "Kyabobo National Park" },
     { src: "Kalakpa-Game-Production-Reserve.jpg", desc: "Kalakpa Game Reserve" },
     { src: "caption.jpg", desc: "Aflambo Falls" },
     { src: "volta-lake.jpg", desc: "Lake Volta" }
@@ -171,7 +171,7 @@ if (window.innerWidth <= 768) {
       const text = document.createElement("p");
       text.textContent = item.desc;
       text.style.fontSize = "20px";
-      text.style.color = "gold";
+      text.style.color = "black";
       text.style.marginTop = "6px";
       text.style.textShadow= "2px 2px 8px rgba(1, 1, 1, 0.16)";
       text.style.fontWeight = "bold"
