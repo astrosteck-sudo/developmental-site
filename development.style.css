@@ -54,7 +54,7 @@ body {
 }
 @font-face{
   font-family: "haerins";
-  src: url(OpenType-PS/Haerins.otf);
+  src: url(Haerins.otf);
   font-weight: normal;
   font-style: normal;
 }
@@ -69,7 +69,7 @@ body {
   font-family: haerins;
 }
 #volta-text{
-  background: url(slide_pictures/pexels-jm-dequina-111050-342861.jpg) no-repeat center;
+  background: url(pexels-jm-dequina-111050-342861.jpg) no-repeat center;
   -webkit-background-clip: text;
   color: transparent;
   font-family: haerins;
@@ -838,7 +838,6 @@ footer {
     to {opacity: 1}/*Whwn the animation is complete set it back to 100%*/
 }
 
-
 @keyframes slideLeft{
   from{transform: translateX(300%);}
   to{transform: translateX(0);}
@@ -995,7 +994,7 @@ footer {
     color: gold;
   }
   #volta-text{
-    background: url(slide_pictures/pexels-jm-dequina-111050-342861.jpg) no-repeat center;
+    background: url(pexels-jm-dequina-111050-342861.jpg) no-repeat center;
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -1157,7 +1156,7 @@ footer {
     color: gold;
   }
   #volta-text{
-    background: url(slide_pictures/pexels-jm-dequina-111050-342861.jpg) no-repeat center;
+    background: url(pexels-jm-dequina-111050-342861.jpg) no-repeat center;
     -webkit-background-clip: text;
     color: transparent;
   }
