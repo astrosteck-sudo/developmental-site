@@ -10,6 +10,11 @@ html, body {
   height: 100%;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* equal to your header height */
+}
+
 
 img {
   max-width: 100%;
@@ -45,6 +50,7 @@ img {
     /* overflow: hidden; */
     /* background-image: url(new_foreign_pic/pexels-umkreisel-app-956999.jpg);
 } */ 
+
 body {
   margin: 0;
   padding: 0;
@@ -64,15 +70,22 @@ body {
   font-weight: bold;
   margin-left: 20px;
   margin-top: 5px;
-  font-size: 39px;
+  font-size: 25px;
   color: gold;
   font-family: haerins;
 }
 #volta-text{
-  background: url(pexels-jm-dequina-111050-342861.jpg) no-repeat center;
+  background: url(kente_cloth.jpg) no-repeat center;
   -webkit-background-clip: text;
   color: transparent;
   font-family: haerins;
+  animation: animate 28s linear infinite;
+  font-size: 35px;
+}
+@keyframes animate{
+  to{
+    background-position-y: -500px;
+  }
 }
 header{
   /* border: solid red; */
@@ -83,6 +96,8 @@ header{
   /* top: 0; */
   z-index: 2000;
   position: fixed;
+  
+
 }
 .hamburger{
   /* border: solid blue; */
@@ -552,6 +567,10 @@ p{
   height: 250px;
   width: 100vw;
 }
+.testimonial h4{
+  /* border: solid red; */
+  color: rgb(29, 30, 28);;
+}
 
 footer {
   background-color: rgb(46, 137, 167);
@@ -900,12 +919,12 @@ footer {
     
   }
   .welcome-text {
-    border: solid rgb(47, 0, 255);
+    /* border: solid rgb(47, 0, 255); */
     padding-top: 30px;
     max-height: 570px;
   }
   .welcome-text p{
-    border: solid green;
+    /* border: solid green; */
     padding-top: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -994,10 +1013,12 @@ footer {
     color: gold;
   }
   #volta-text{
-    background: url(pexels-jm-dequina-111050-342861.jpg) no-repeat center;
+    background: url(kente_cloth.jpg) no-repeat center;
     -webkit-background-clip: text;
     color: transparent;
+    animation: animate 28s linear infinite;
   }
+
   .hamburger {
     font-size: 30px;
     border: none;
@@ -1156,7 +1177,7 @@ footer {
     color: gold;
   }
   #volta-text{
-    background: url(pexels-jm-dequina-111050-342861.jpg) no-repeat center;
+    background: url(kente_cloth.jpg) no-repeat center;
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -1610,12 +1631,15 @@ footer {
     color: #666;
     font-weight: bolder;
     width: 400px;
-    font-size: 28px;
+    font-size: 17px;
     display: block;
     font-weight: bold;
     color: gold;
     /* border: solid blue; */
     margin-left: 5%;
+  }
+  #volta-text{
+    font-size: 25px;
   }
   .hamburger {
     font-size: 30px;
@@ -1629,11 +1653,11 @@ footer {
   /* --- MOBILE NAV --- */
   .mobile-nav {
     position: fixed;
-    top: 60px;
+    top: 50px;
     right: -260px;
     width: 220px;
     background-color: #f7f7f7;
-    height: 44.6vh;
+    height: 43.6vh;
     display: flex;
     flex-direction: column;
     /* padding: 0px; */
