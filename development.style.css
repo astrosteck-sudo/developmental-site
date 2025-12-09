@@ -60,7 +60,7 @@ body {
 }
 @font-face{
   font-family: "haerins";
-  src: url(Haerins.otf);
+  src: url(OpenType-PS/Haerins.otf);
   font-weight: normal;
   font-style: normal;
 }
@@ -380,12 +380,11 @@ img.displaySlide{
   border-radius: 12px;
   padding: 25px 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
 }
 
 .visit-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .visit-icon {
@@ -656,7 +655,7 @@ footer {
     transform: scale(1.2);
 }
 .footer-socials:hover > img{
-  border: solid red;
+  /* border: solid red; */
   transform: scale(1.2);
 }
 
@@ -1011,6 +1010,7 @@ footer {
     display: block;
     font-weight: bold;
     color: gold;
+    /* border: solid green; */
   }
   #volta-text{
     background: url(kente_cloth.jpg) no-repeat center;
@@ -1021,34 +1021,33 @@ footer {
 
   .hamburger {
     font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    display: none; /* hidden on desktop */
     border: none;
-    color: rgb(16, 16, 0);
-    display: block;
-    border: solid red;
-    margin-left: 900px;
-    margin-top: 20px;
+    color: rgb(247, 251, 6);
   }
 
   /* --- MOBILE NAV --- */
   .mobile-nav {
     position: fixed;
-    top: 60px;
-    right: -2060px;
+    top: 50px;
+    right: -260px;
     width: 220px;
     background-color: #f7f7f7;
-    height: 44.6vh;
+    height: 43.6vh;
     display: flex;
     flex-direction: column;
     /* padding: 0px; */
     transition: right 0.3s ease;
     box-shadow: -2px 0 10px rgba(0,0,0,0.25);
     overflow: scroll;
-    /* border: solid red; */
+    /* border: solid rgb(211, 248, 4); */
     text-align: left;
     gap: 20px;
   }
   .mobile-nav span{
-    /* border: solid red; */
+    /* border: solid rgb(0, 17, 255); */
     font-size: 20px;
     width: 100px;
     margin-left: 10px;
@@ -1067,9 +1066,26 @@ footer {
     /* border-bottom: 1px solid #ddd; */
   }
 
-  /* .mobile-nav a:last-child {
+  .mobile-nav a:last-child {
     border-bottom: none;
-  } */
+  }
+
+  /* --- SHOW MENU WHEN ACTIVE --- */
+  .mobile-nav.open {
+    right: 0;
+  }
+    
+  .hamburger {
+    display: inline-block;
+    /* border: solid red; */
+    margin-left: 0px;
+    color: black;
+    margin-left: 550px;
+    margin-top: 10px;
+  }
+  
+
+  
 
   .slider{
     /* border: solid blue; */
@@ -1422,44 +1438,38 @@ footer {
   }
 
   /*THIS IS FOR THE GALLERY SECTION*/
-  .gallery{
-    /* border: solid rgb(11, 221, 155); */
-    min-height: 300px;
+  #gallery-header{
+    /* border: solid red; */
     margin-top: 0px;
-    overflow: scroll;
-    margin-bottom: 0px;
+    font-size: 35px;
+  }
+  .gallery{
+    /* border: solid blue; */
+    max-height: 300px;
+    overflow-y: hidden;
   }
   .gallery-container {
     display: flex;
-    flex-direction: row-reverse;
-    overflow: scroll;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     gap: 10px;
-    /* border: solid blue; */
-    padding-right: 4485px;
     height: 300px;
     overflow-y: hidden;
-    padding-left: 5px;
     -ms-overflow-style: none;
     scrollbar-width: none;
-  }
-  -your-element::-webkit-scollbar {
-      display: none;
-    }
-  #gallery-header{
-    margin-top: 0px;
     /* border: solid red; */
-    font-size: 2rem;
   }
-  .gallery img{
-    /* border: solid rgb(243, 243, 4); */
+  .gallery-container::-webkit-scrollbar {
+    display: none;
+  }
+  .gallery img {
     flex-shrink: 0;
-    width: 85%;
     min-width: 97vw;
     height: 260px;
     scroll-snap-align: center;
   }
+
   .description{
     font-size: 4rem;
   }
@@ -1526,11 +1536,11 @@ footer {
   .other_activities_container{
     /* border: solid red; */
     gap: 20px;
-    padding-left: 0px;
+    padding-left: 1px;
   }
   .Other_activities h3{
     /* border: solid red; */
-    text-align: center;
+    text-align: l;
     text-shadow: 2px 2px 8px rgba(1, 1, 1, 0.16);
     font-weight: bold;
   }
@@ -1657,14 +1667,14 @@ footer {
     right: -260px;
     width: 220px;
     background-color: #f7f7f7;
-    height: 43.6vh;
+    max-height: 43.1vh;
     display: flex;
     flex-direction: column;
     /* padding: 0px; */
     transition: right 0.3s ease;
     box-shadow: -2px 0 10px rgba(0,0,0,0.25);
     overflow: scroll;
-    /* border: solid red; */
+    border: solid red;
     text-align: left;
     gap: 20px;
   }
