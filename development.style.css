@@ -11,7 +11,7 @@ html, body {
   overflow-x: hidden;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth 5s;
   scroll-padding-top: 70px; /* equal to your header height */
 }
 
@@ -732,10 +732,10 @@ footer {
   background-color: #27c155;
   padding-top: 5px;
 }
-.map-section p:hover {
+/* .map-section p:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
+} */
 /* ---------- FESTIVAL SECTION ---------- */
 .festivals {
     padding: 80px 10%;
@@ -1613,7 +1613,7 @@ footer {
     width: 100vw;
   }
   .footer-bottom p{
-    font-size: 20px;
+    font-size: 13.4px;
   }
 
     /* --- NAVBAR BASE --- */
