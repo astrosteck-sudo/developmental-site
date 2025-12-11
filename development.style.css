@@ -1665,7 +1665,7 @@ footer {
     right: -260px;
     width: 220px;
     background-color: #f7f7f7;
-    min-height: 60vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     /* padding: 0px; */
