@@ -96,8 +96,6 @@ header{
   /* top: 0; */
   z-index: 2000;
   position: fixed;
-  
-
 }
 .hamburger{
   /* border: solid blue; */
@@ -126,7 +124,7 @@ header{
   text-decoration: none;
 }
 .mobile-nav span:hover{
-  color: rgb(110, 96, 13);
+  color: rgb(64, 57, 17);
 }
 .slider{
     position: relative;
@@ -1687,7 +1685,9 @@ footer {
   .mobile-nav a{
     /* border: solid green; */
     width: 200px;
-    height: 0px;
+    /* height: 100px; */
+    margin-top: 0px;
+    overflow: hidden;
   }
 
   .mobile-nav a {
