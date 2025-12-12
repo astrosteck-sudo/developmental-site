@@ -74,6 +74,7 @@ body {
   color: gold;
   font-family: haerins;
 }
+
 #volta-text{
   background: url(kente_cloth.jpg) no-repeat center;
   -webkit-background-clip: text;
@@ -208,6 +209,7 @@ img.displaySlide{
   font-family: Averia Gruesa Libre;
   overflow: hidden;
   padding-top: 10px;
+  overflow-y: scroll;
 }
 .welcome-text h2 {
   font-size: 4rem;
@@ -924,16 +926,10 @@ footer {
     /* border: solid green; */
     padding-top: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    overflow: scroll;
   }
 
-  /*THIS IS THE ABOUT SECTION*/
-  .about-details p{
-    font-size: 250px;
-  }
-  .about-details{
-    /* border: solid blue; */
-    max-height: 600px;
-  }
 
   /*THIS IS THE GALLERY SECTION*/
   .gallery{
@@ -967,6 +963,7 @@ footer {
   }
   .map-section p{
     font-size: 30px;
+    
   }
   .map{
     margin-right: 1px;
@@ -1036,11 +1033,12 @@ footer {
     height: 43.6vh;
     display: flex;
     flex-direction: column;
+    height: 60vh;
     /* padding: 0px; */
     transition: right 0.3s ease;
     box-shadow: -2px 0 10px rgba(0,0,0,0.25);
     overflow: scroll;
-    /* border: solid rgb(211, 248, 4); */
+    /* border: solid red; */
     text-align: left;
     gap: 20px;
   }
@@ -1103,10 +1101,6 @@ footer {
     /* border: solid black; */
     font-size: 26px;
   }
-  .about > p{
-    /* border: solid red; */
-    font-size: 34px;
-  }
   .gallery{
     margin-top: 40px;
     /* border: solid red; */
@@ -1114,7 +1108,6 @@ footer {
     overflow: scroll;
   }
   #gallery-header{
-    margin-top: 340px;
     /* border: solid gray; */
     margin-bottom: 0px;
   }
@@ -1144,6 +1137,17 @@ footer {
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
   }
+  .festivals {
+    padding-left: 9px;
+  }
+  .festival-grid{
+    justify-content: center;
+    /* gap: 40px; */
+    flex-wrap: wrap;
+    margin-left: 0px;
+    width: 99vw;
+    /* border: solid red; */
+  }
   #about-tourism-text{
   /* border: solid red; */
   width: 200px;
@@ -1164,7 +1168,7 @@ footer {
   }
 }
 @media (max-width: 1024px){
-    header{
+  header{
     height: 70px;
     position: fixed;
   }
@@ -1211,7 +1215,7 @@ footer {
   /* --- MOBILE NAV --- */
   .mobile-nav {
     position: fixed;
-    top: 60px;
+    top: 50px;
     right: -260px;
     width: 220px;
     background-color: #f7f7f7;
@@ -1222,6 +1226,7 @@ footer {
     transition: right 0.3s ease;
     box-shadow: -2px 0 10px rgba(0,0,0,0.25);
     overflow: scroll;
+    height: 43vh;
     /* border: solid red; */
     text-align: left;
     gap: 20px;
@@ -1299,7 +1304,7 @@ footer {
     margin-top: 5px;
   }
   #gallery-header{
-    margin-top: 210px;
+    margin-top: 21px;
     /* border: solid goldenrod; */
   }
   .gallery-container{
@@ -1511,7 +1516,7 @@ footer {
   max-height: 50px;
   text-align: center;
   background-color: #27c155;
-}
+  }
   .map{
     /* border: solid red; */
     width: 100vw;
@@ -1655,8 +1660,9 @@ footer {
     user-select: none;
     display: none; /* hidden on desktop */
     border: none;
-    color: rgb(247, 251, 6);
+    /* color: rgb(247, 251, 6); */
   }
+  
 
   /* --- MOBILE NAV --- */
   .mobile-nav {
@@ -1665,36 +1671,44 @@ footer {
     right: -260px;
     width: 220px;
     background-color: #f7f7f7;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     /* padding: 0px; */
     transition: right 0.3s ease;
-    box-shadow: -2px 0 10px rgba(0,0,0,0.25);
-    overflow: scroll;
+    /* box-shadow: -2px 0 10px rgba(0,0,0,0.25); */
+    overflow-y: scroll;
+    overflow-x: hidden;
     /* border: solid red; */
     text-align: left;
-    gap: 20px;
+    gap: 0px;
+    padding-top: 15px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(1, 1fr); */
   }
   .mobile-nav span{
-    /* border: solid red; */
+    /* border: solid rgb(0, 55, 255); */
     font-size: 20px;
     width: 100px;
     margin-left: 10px;
+    font-weight: bolder;
+
   }
   .mobile-nav a{
     /* border: solid green; */
-    width: 200px;
-    height: 0px;
+    width: 100vw;
+    height: 50px;
+    padding-top: 10px;
+    /* background-color: rgb(238, 229, 229); */
   }
 
-  .mobile-nav a {
+  /* .mobile-nav a {
     text-decoration: none;
     font-size: 18px;
     color: #444;
     padding: 12px 0;
-    /* border-bottom: 1px solid #ddd; */
-  }
+    border-bottom: 1px solid #ddd;
+  } */
 
   .mobile-nav a:last-child {
     border-bottom: none;
